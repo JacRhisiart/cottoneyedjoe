@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cotton Eyed Joe — The Football Transfer Game</title>
+  <meta name="description" content="Where did you come from, where did you go? Guess the clubs footballers joined from and left for." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <h1 class="logo"><button id="logo-btn" type="button">Cotton <span>Eyed</span> Joe</button></h1>
+      <p class="tagline">Where did you come from? Where did you go?</p>
+    </header>
+
+    <main>
+      <!-- Category menu -->
+      <section id="screen-menu" class="screen">
+        <h2 class="screen-title">Pick a category</h2>
+        <div id="category-list" class="category-grid"></div>
+        <p class="menu-note">10 footballers per round &middot; for each one, name the club they joined from and the club they left for.</p>
+      </section>
+
+      <!-- Round -->
+      <section id="screen-game" class="screen hidden">
+        <div class="hud">
+          <span id="hud-category" class="hud-pill"></span>
+          <span id="hud-progress" class="hud-pill"></span>
+          <span id="hud-score" class="hud-pill hud-score"></span>
+          <span id="hud-streak" class="hud-pill hud-streak"></span>
+        </div>
+
+        <div class="player-card">
+          <div class="photo-wrap">
+            <img id="player-photo" class="hidden" alt="" referrerpolicy="no-referrer" />
+            <div id="photo-fallback" class="photo-fallback hidden" aria-hidden="true"></div>
+          </div>
+          <h2 id="player-name" class="player-name"></h2>
+          <p id="featured-line" class="featured-line"></p>
+          <h3 id="question" class="question"></h3>
+
+          <form id="answer-form" autocomplete="off">
+            <div class="input-wrap">
+              <input id="answer-input" type="text" placeholder="Type a club…"
+                     autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false"
+                     aria-label="Your answer" />
+              <ul id="suggestions" class="suggestions hidden" role="listbox"></ul>
+            </div>
+            <button id="submit-btn" class="btn btn-primary" type="submit">Answer</button>
+          </form>
+
+          <div id="feedback" class="feedback hidden">
+            <p id="feedback-text"></p>
+            <button id="next-btn" class="btn btn-primary" type="button">Next</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- End-of-round summary -->
+      <section id="screen-summary" class="screen hidden">
+        <h2 class="screen-title">Full time!</h2>
+        <div class="summary-stats">
+          <div class="stat"><span id="sum-score" class="stat-big"></span><span class="stat-label">score</span></div>
+          <div class="stat"><span id="sum-accuracy" class="stat-big"></span><span class="stat-label">accuracy</span></div>
+          <div class="stat"><span id="sum-streak" class="stat-big"></span><span class="stat-label">best streak</span></div>
+        </div>
+        <p id="sum-verdict" class="sum-verdict"></p>
+        <ul id="sum-list" class="sum-list"></ul>
+        <div class="summary-actions">
+          <button id="again-btn" class="btn btn-primary" type="button">Play Again</button>
+          <button id="menu-btn" class="btn btn-ghost" type="button">Change Category</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      Transfer data compiled from Wikidata / Wikipedia &middot; photos from Wikimedia Commons (freely licensed)
+    </footer>
+  </div>
+
+  <script src="players.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
