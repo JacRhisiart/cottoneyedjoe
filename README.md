@@ -134,6 +134,11 @@ category by the featured club's league, and commits ~10 new players to
 become **that day's daily challenge**; from the next day they join the practice
 categories. Runs are idempotent — one batch per day.
 
+The pool is **capped at 500 players**: once a run pushes it over, the oldest
+auto-added players are pruned to bring it back to 500. The hand-verified base
+(the original players, which have no `daily` tag) and the current day's set are
+never pruned.
+
 **These entries are unverified automated data** — they carry an `auto-added`
 comment and `photoNeutral: false`, and use the Wikipedia photo fallback. Bad
 chains (loans/odd categories) can slip through; the script skips players it

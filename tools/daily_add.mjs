@@ -152,6 +152,33 @@ export function appendToSource(src, entries, dateStr) {
   return src.slice(0, marker) + block + src.slice(marker);
 }
 
+const CAP = 500; // maximum number of players kept in players.js
+
+/**
+ * Pure: which player ids to prune to keep the pool at CAP. Removes only
+ * auto-added players (those carrying a `daily` tag), oldest first, and never
+ * today's set or the hand-verified base (which have no `daily` tag).
+ */
+export function idsToPrune(players, cap, today) {
+  const excess = players.length - cap;
+  if (excess <= 0) return [];
+  const prunable = players
+    .filter((p) => p.daily && p.daily !== today)
+    .sort((a, b) => String(a.daily).localeCompare(String(b.daily)));
+  return prunable.slice(0, excess).map((p) => p.id);
+}
+
+/** Pure: remove the given player object blocks from the players.js source. */
+export function pruneSource(src, ids) {
+  let out = src;
+  for (const id of ids) {
+    const needle = `id: ${JSON.stringify(id)},`.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const re = new RegExp("\\n  \\{\\n    " + needle + "[\\s\\S]*?\\n  \\},", "");
+    out = out.replace(re, "");
+  }
+  return out;
+}
+
 // ---- network + write (only runs when executed directly) ----
 
 async function fetchRows() {
@@ -209,14 +236,30 @@ async function main() {
   if (picked.length === 0) { console.log("No new valid players found - no changes."); return; }
   picked.forEach((p) => { p.daily = dateStr; });
 
-  const next = appendToSource(src, picked, dateStr);
-  // safety: must parse and grow by exactly picked.length
-  const after = new Function(next + "; return PLAYERS;")();
-  if (after.length !== PLAYERS.length + picked.length) throw new Error("post-write validation failed");
+  let next = appendToSource(src, picked, dateStr);
+  let afterAdd = new Function(next + "; return PLAYERS;")();
+  if (afterAdd.length !== PLAYERS.length + picked.length) throw new Error("post-append validation failed");
+
+  // enforce the size cap: prune oldest auto-added players
+  const pruneIds = idsToPrune(afterAdd, CAP, dateStr);
+  if (pruneIds.length) {
+    next = pruneSource(next, pruneIds);
+    const afterPrune = new Function(next + "; return PLAYERS;")();
+    const expected = afterAdd.length - pruneIds.length;
+    if (afterPrune.length !== expected) throw new Error("post-prune validation failed");
+  }
+
+  // final safety: every entry still has the required fields
+  const finalPlayers = new Function(next + "; return PLAYERS;")();
+  for (const p of finalPlayers) {
+    if (!p.id || !p.name || !p.category || !p.featuredClub || !p.fromClub || !p.toClub) {
+      throw new Error("validation failed: malformed entry " + (p.id || p.name));
+    }
+  }
 
   writeFileSync(PLAYERS_FILE, next);
-  console.log(`Added ${picked.length} players (${dateStr}):`);
-  for (const p of picked) console.log(`  - ${p.name} [${p.category}] ${p.fromClub} -> ${p.featuredClub} -> ${p.toClub}`);
+  console.log(`Added ${picked.length} players (${dateStr}); pruned ${pruneIds.length}; pool now ${finalPlayers.length}/${CAP}.`);
+  for (const p of picked) console.log(`  + ${p.name} [${p.category}] ${p.fromClub} -> ${p.featuredClub} -> ${p.toClub}`);
 }
 
 // run only when invoked directly (not when imported by tests)

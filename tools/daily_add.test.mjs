@@ -1,6 +1,6 @@
 // Unit tests for the pure data logic of daily_add.mjs (no network).
 // Run: node tools/daily_add.test.mjs
-import { buildCandidates, serializeEntry, appendToSource } from "./daily_add.mjs";
+import { buildCandidates, serializeEntry, appendToSource, idsToPrune, pruneSource } from "./daily_add.mjs";
 
 let pass = 0;
 const ok = (c, m) => { if (!c) throw new Error("FAIL: " + m); console.log("ok -", m); pass++; };
@@ -59,5 +59,33 @@ ok(serializeEntry(c, "2026-06-15").includes("auto-added 2026-06-15"), "entry car
 const tagged = { ...c, daily: "2026-06-15" };
 ok(serializeEntry(tagged, "2026-06-15").includes('daily: "2026-06-15"'), "daily tag is serialized");
 ok(!serializeEntry(c, "2026-06-15").includes("daily:"), "no daily line when untagged");
+
+// ---- size cap / pruning ----
+const base = [{ id: "curated-1", name: "Curated One" }]; // no daily tag -> never pruned
+const auto = [];
+for (let i = 0; i < 12; i++) auto.push({ id: "auto-" + i, name: "Auto " + i, daily: "2026-06-" + String(i + 1).padStart(2, "0") });
+const today = "2026-06-12";
+const pool = base.concat(auto);
+
+ok(idsToPrune(pool, 500, today).length === 0, "no pruning under the cap");
+const prune = idsToPrune(pool, 10, today); // 13 players, cap 10 -> remove 3
+ok(prune.length === 3, "prunes exactly the excess (3)");
+ok(prune[0] === "auto-0" && prune[2] === "auto-2", "prunes oldest auto-added first");
+ok(!prune.includes("curated-1"), "never prunes the hand-verified base");
+ok(!prune.includes("auto-11"), "never prunes today's / newest set");
+
+// pruneSource removes the right blocks and keeps the file valid
+let famous = "const PLAYERS = [\n";
+for (const p of [...base, ...auto]) {
+  famous += `  {\n    id: ${JSON.stringify(p.id)},\n    name: ${JSON.stringify(p.name)},\n`;
+  if (p.daily) famous += `    daily: ${JSON.stringify(p.daily)},\n`;
+  famous += `    altSpellings: { fromClub: [], toClub: [] },\n  },\n`;
+}
+famous += "];\n";
+const pruned = pruneSource(famous, ["auto-0", "auto-1", "auto-2"]);
+const arr2 = new Function(pruned + "; return PLAYERS;")();
+ok(arr2.length === 10, "pruneSource leaves 10 players");
+ok(!arr2.some((p) => ["auto-0", "auto-1", "auto-2"].includes(p.id)), "pruned ids are gone");
+ok(arr2.some((p) => p.id === "curated-1"), "curated entry retained");
 
 console.log(`\nDAILY-ADD TESTS OK — ${pass} checks passed`);
