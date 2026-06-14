@@ -82,6 +82,7 @@ main { flex: 1; }
 .daily-body { display: flex; flex-direction: column; }
 .daily-cat { font-size: 1.45rem; font-weight: 800; }
 .daily-sub { color: var(--text-dim); font-size: 0.88rem; margin-top: 2px; }
+.daily-reset { display: block; margin-top: 10px; font-size: 0.76rem; color: var(--accent); opacity: 0.9; }
 
 /* ---------- menu stats + actions ---------- */
 

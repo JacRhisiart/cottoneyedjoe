@@ -177,9 +177,11 @@
   };
   const els = {
     dailyCard: $("daily-card"),
+    dailyKicker: $("daily-kicker"),
     dailyStatus: $("daily-status"),
     dailyCat: $("daily-cat"),
     dailySub: $("daily-sub"),
+    dailyReset: $("daily-reset"),
     menuStats: $("menu-stats"),
     openLeaderboard: $("open-leaderboard"),
     categoryList: $("category-list"),
@@ -227,9 +229,27 @@
 
   // ---------- menu ----------
 
+  // Live "resets in Xh Ym" countdown to the next UTC midnight (when the daily
+  // automatically rolls over to a new category + player set).
+  function msToNextUtcMidnight() {
+    const n = new Date();
+    return Date.UTC(n.getUTCFullYear(), n.getUTCMonth(), n.getUTCDate() + 1) - n.getTime();
+  }
+  function updateDailyCountdown() {
+    if (!els.dailyReset) return;
+    const ms = msToNextUtcMidnight();
+    const h = Math.floor(ms / 3600000);
+    const m = Math.floor((ms % 3600000) / 60000);
+    els.dailyReset.textContent = `New challenge in ${h}h ${m}m · resets 00:00 UTC`;
+  }
+
   function renderMenu() {
     const today = dayKey();
     const cat = dailyCategory(today);
+    // Show today's date so it's clear the challenge is dated and rotates daily.
+    const dateLabel = new Date().toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short", timeZone: "UTC" });
+    els.dailyKicker.textContent = `Daily Challenge · ${dateLabel}`;
+    updateDailyCountdown();
     els.dailyCat.textContent = cat;
     const d = store.daily[today];
     if (d && d.done) {
@@ -740,6 +760,7 @@
 
   renderMenu();
   showScreen("menu");
+  setInterval(updateDailyCountdown, 30000); // keep the "resets in" line live
 
   // expose a little for the smoke test (no effect in the browser UI)
   window.__CEJ__ = { normalize, isCorrect, isProfane, dailySet, dailyCategory, dayKey, CATEGORIES, store };
