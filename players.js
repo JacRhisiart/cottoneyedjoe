@@ -40,7 +40,7 @@ const PLAYERS = [
     featuredClub: "Arsenal",
     fromClub: "Juventus",
     toClub: "Barcelona",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Thierry_Henry_Euro_2008.JPG?width=600", // France at Euro 2008
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Thierry_Henry_Euro_2008.JPG?width=600",
     photoNeutral: true,
     altSpellings: { fromClub: ["Juve","Juventus FC"], toClub: ["FC Barcelona","Barca","Barça"] },
   },
@@ -51,10 +51,9 @@ const PLAYERS = [
     featuredClub: "Leeds United",
     fromClub: "Nîmes",
     toClub: "Manchester United",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Cantona_(20660481956).jpg?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["Nimes","Nîmes Olympique","Nimes Olympique"], toClub: ["Man United","Man Utd","Manchester Utd","MUFC"] },
-    // note: Leeds move began as a loan from Nîmes in early 1992 before becoming permanent.
   },
   {
     id: "cristiano-ronaldo",
@@ -63,10 +62,9 @@ const PLAYERS = [
     featuredClub: "Manchester United",
     fromClub: "Sporting CP",
     toClub: "Real Madrid",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Cristiano_Ronaldo_2018_(4x5_cropped).jpg?width=600", // Portugal, 2018 World Cup
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Cristiano_Ronaldo_2018_(4x5_cropped).jpg?width=600",
     photoNeutral: true,
     altSpellings: { fromClub: ["Sporting Lisbon","Sporting","Sporting Clube de Portugal"], toClub: ["Real Madrid CF"] },
-    // note: First United spell (2003-2009).
   },
   {
     id: "ruud-van-nistelrooy",
@@ -76,7 +74,8 @@ const PLAYERS = [
     fromClub: "PSV Eindhoven",
     toClub: "Real Madrid",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Ruud van Nistelrooy", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["PSV"], toClub: ["Real Madrid CF"] },
   },
   {
@@ -86,10 +85,10 @@ const PLAYERS = [
     featuredClub: "Chelsea",
     fromClub: "Marseille",
     toClub: "Shanghai Shenhua",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Didier_Drogba_2013_(1).JPG?width=600", // Galatasaray era (2013), no Chelsea kit
+    photoUrl: null,
     photoNeutral: true,
+    wiki: "Didier Drogba", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["Olympique de Marseille","Olympique Marseille","OM"], toClub: ["Shanghai"] },
-    // note: First Chelsea spell (2004-2012).
   },
   {
     id: "fernando-torres",
@@ -98,8 +97,8 @@ const PLAYERS = [
     featuredClub: "Liverpool",
     fromClub: "Atlético Madrid",
     toClub: "Chelsea",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Adil_Rami_and_Fernando_Torres_Spain-France_Euro_2012.jpg?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["Atletico Madrid","Atletico","Atleti","Atlético de Madrid"], toClub: ["Chelsea FC"] },
   },
   {
@@ -110,7 +109,8 @@ const PLAYERS = [
     fromClub: "Ajax",
     toClub: "Barcelona",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Luis Suárez", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["AFC Ajax","Ajax Amsterdam"], toClub: ["FC Barcelona","Barca","Barça"] },
   },
   {
@@ -121,7 +121,8 @@ const PLAYERS = [
     fromClub: "Southampton",
     toClub: "Real Madrid",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Gareth Bale", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["Southampton FC","Saints"], toClub: ["Real Madrid CF"] },
   },
   {
@@ -132,7 +133,8 @@ const PLAYERS = [
     fromClub: "Feyenoord",
     toClub: "Manchester United",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Robin van Persie", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["Feyenoord Rotterdam"], toClub: ["Man United","Man Utd","Manchester Utd","MUFC"] },
   },
   {
@@ -142,8 +144,8 @@ const PLAYERS = [
     featuredClub: "Arsenal",
     fromClub: "AC Milan",
     toClub: "Juventus",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Patrick_Vieira_NYCFC_(cropped).JPG?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["Milan"], toClub: ["Juve","Juventus FC"] },
   },
   {
@@ -153,10 +155,9 @@ const PLAYERS = [
     featuredClub: "Manchester United",
     fromClub: "West Ham United",
     toClub: "Manchester City",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Carlos_Tevez_with_Argentina_at_the_Boleyn_Ground_in_November_2014.jpg?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["West Ham"], toClub: ["Man City","MCFC"] },
-    // note: United spell was technically a two-year loan via third-party owners; the common reading (West Ham -> United -> City) is used.
   },
   {
     id: "alan-shearer",
@@ -166,7 +167,8 @@ const PLAYERS = [
     fromClub: "Southampton",
     toClub: "Newcastle United",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Alan Shearer", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["Southampton FC","Saints"], toClub: ["Newcastle","NUFC"] },
   },
   {
@@ -177,7 +179,8 @@ const PLAYERS = [
     fromClub: "Nottingham Forest",
     toClub: "Celtic",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Roy Keane", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["Forest"], toClub: ["Celtic FC","Glasgow Celtic"] },
   },
   {
@@ -187,8 +190,8 @@ const PLAYERS = [
     featuredClub: "Chelsea",
     fromClub: "Parma",
     toClub: "Cagliari",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Zola_at_Lazio.JPG?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["Parma Calcio","AC Parma"], toClub: ["Cagliari Calcio"] },
   },
   {
@@ -199,7 +202,8 @@ const PLAYERS = [
     fromClub: "Brøndby",
     toClub: "Sporting CP",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Peter Schmeichel", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["Brondby","Brøndby IF","Brondby IF"], toClub: ["Sporting Lisbon","Sporting","Sporting Clube de Portugal"] },
   },
   {
@@ -209,10 +213,9 @@ const PLAYERS = [
     featuredClub: "Tottenham Hotspur",
     fromClub: "Monaco",
     toClub: "Bayern Munich",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Trainer_Klinsmann.JPG?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["AS Monaco"], toClub: ["Bayern","FC Bayern","Bayern München","Bayern Munchen","FC Bayern Munich"] },
-    // note: First Spurs spell (1994-95).
   },
   {
     id: "wayne-rooney",
@@ -221,10 +224,9 @@ const PLAYERS = [
     featuredClub: "Manchester United",
     fromClub: "Everton",
     toClub: "Everton",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Wayne_Rooney_(Broken_Foot).JPG?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["Everton FC"], toClub: ["Everton FC"] },
-    // note: Came from and returned to Everton - both answers are the same club.
   },
   {
     id: "luis-figo",
@@ -233,7 +235,7 @@ const PLAYERS = [
     featuredClub: "Real Madrid",
     fromClub: "Barcelona",
     toClub: "Inter Milan",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Luis_Figo-2009.jpg?width=600", // Post-retirement portrait (2009)
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Luis_Figo-2009.jpg?width=600",
     photoNeutral: true,
     altSpellings: { fromClub: ["FC Barcelona","Barca","Barça"], toClub: ["Inter","Internazionale","FC Internazionale"] },
   },
@@ -244,8 +246,8 @@ const PLAYERS = [
     featuredClub: "Barcelona",
     fromClub: "Paris Saint-Germain",
     toClub: "AC Milan",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Ronaldinho_by_Vicario.JPG?width=600", // Kit not yet audited
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Ronaldinho_by_Vicario.JPG?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["PSG","Paris SG","Paris Saint Germain","Paris St-Germain","Paris St Germain"], toClub: ["Milan"] },
   },
   {
@@ -256,7 +258,8 @@ const PLAYERS = [
     fromClub: "Valencia",
     toClub: "Atlético Madrid",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "David Villa", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["Valencia CF"], toClub: ["Atletico Madrid","Atletico","Atleti","Atlético de Madrid"] },
   },
   {
@@ -267,7 +270,8 @@ const PLAYERS = [
     fromClub: "Liverpool",
     toClub: "Bayern Munich",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Xabi Alonso", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["Liverpool FC"], toClub: ["Bayern","FC Bayern","Bayern München","Bayern Munchen","FC Bayern Munich"] },
   },
   {
@@ -277,7 +281,7 @@ const PLAYERS = [
     featuredClub: "Barcelona",
     fromClub: "Santos",
     toClub: "Paris Saint-Germain",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Neymar_Junior_the_Future_of_Brazil.jpg?width=600", // Brazil-era shot, pre-Barcelona
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Neymar_Junior_the_Future_of_Brazil.jpg?width=600",
     photoNeutral: true,
     altSpellings: { fromClub: ["Santos FC"], toClub: ["PSG","Paris SG","Paris Saint Germain","Paris St-Germain","Paris St Germain"] },
   },
@@ -289,7 +293,8 @@ const PLAYERS = [
     fromClub: "River Plate",
     toClub: "Napoli",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Gonzalo Higuaín", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["CA River Plate"], toClub: ["SSC Napoli"] },
   },
   {
@@ -300,7 +305,8 @@ const PLAYERS = [
     fromClub: "Benfica",
     toClub: "Manchester United",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Ángel Di María", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["SL Benfica"], toClub: ["Man United","Man Utd","Manchester Utd","MUFC"] },
   },
   {
@@ -311,7 +317,8 @@ const PLAYERS = [
     fromClub: "Werder Bremen",
     toClub: "Arsenal",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Mesut Özil", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["Bremen","SV Werder Bremen"], toClub: ["Arsenal FC","The Gunners"] },
   },
   {
@@ -322,9 +329,9 @@ const PLAYERS = [
     fromClub: "Real Sociedad",
     toClub: "Barcelona",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Antoine Griezmann", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["La Real","Sociedad"], toClub: ["FC Barcelona","Barca","Barça"] },
-    // note: First Atlético spell (2014-2019).
   },
   {
     id: "diego-forlan",
@@ -334,7 +341,8 @@ const PLAYERS = [
     fromClub: "Villarreal",
     toClub: "Inter Milan",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Diego Forlán", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["Villarreal CF","Villareal"], toClub: ["Inter","Internazionale","FC Internazionale"] },
   },
   {
@@ -344,8 +352,8 @@ const PLAYERS = [
     featuredClub: "Real Madrid",
     fromClub: "Sevilla",
     toClub: "Paris Saint-Germain",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Sergio_Ramos_Euro_2012_vs_France_01.jpg?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["Sevilla FC","Seville"], toClub: ["PSG","Paris SG","Paris Saint Germain","Paris St-Germain","Paris St Germain"] },
   },
   {
@@ -356,9 +364,9 @@ const PLAYERS = [
     fromClub: "Sevilla",
     toClub: "Juventus",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Dani Alves", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["Sevilla FC","Seville"], toClub: ["Juve","Juventus FC"] },
-    // note: First Barcelona spell (2008-2016).
   },
   {
     id: "ivan-rakitic",
@@ -367,10 +375,9 @@ const PLAYERS = [
     featuredClub: "Barcelona",
     fromClub: "Sevilla",
     toClub: "Sevilla",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Ivan_Rakiti%C4%87_and_Dejan_Lovren_during_a_Croatia_training_session%2C_in_June_2018.jpg?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["Sevilla FC","Seville"], toClub: ["Sevilla FC","Seville"] },
-    // note: Came from and returned to Sevilla - both answers are the same club.
   },
   {
     id: "samuel-etoo",
@@ -380,7 +387,8 @@ const PLAYERS = [
     fromClub: "Mallorca",
     toClub: "Inter Milan",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Samuel Eto'o", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["RCD Mallorca","Real Mallorca"], toClub: ["Inter","Internazionale","FC Internazionale"] },
   },
   {
@@ -390,8 +398,8 @@ const PLAYERS = [
     featuredClub: "Barcelona",
     fromClub: "Deportivo La Coruña",
     toClub: "AC Milan",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Rivaldo.jpg?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["Deportivo","Depor","Deportivo de La Coruna"], toClub: ["Milan"] },
   },
   {
@@ -401,8 +409,8 @@ const PLAYERS = [
     featuredClub: "Real Madrid",
     fromClub: "Lyon",
     toClub: "Al-Ittihad",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Karim_Benzema_Euro_2012.jpg?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["Olympique Lyonnais","OL"], toClub: ["Al Ittihad","Ittihad"] },
   },
   {
@@ -412,10 +420,9 @@ const PLAYERS = [
     featuredClub: "Real Madrid",
     fromClub: "Tottenham Hotspur",
     toClub: "AC Milan",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Luka_Modric_2018.png?width=600", // Croatia, 2018 World Cup
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Luka_Modric_2018.png?width=600",
     photoNeutral: true,
     altSpellings: { fromClub: ["Tottenham","Spurs"], toClub: ["Milan"] },
-    // note: Joined AC Milan on a free transfer in July 2025.
   },
   {
     id: "david-beckham",
@@ -424,8 +431,9 @@ const PLAYERS = [
     featuredClub: "Real Madrid",
     fromClub: "Manchester United",
     toClub: "LA Galaxy",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/David_Beckham_2011.jpg?width=600", // Kit not yet audited (2011, Galaxy era)
-    photoNeutral: false,
+    photoUrl: null,
+    photoNeutral: true,
+    wiki: "David Beckham", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["Man United","Man Utd","Manchester Utd","MUFC"], toClub: ["Los Angeles Galaxy","Galaxy"] },
   },
   {
@@ -435,10 +443,9 @@ const PLAYERS = [
     featuredClub: "AC Milan",
     fromClub: "São Paulo",
     toClub: "Real Madrid",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Ricardo_Izecson_dos_Santos_Leite_(Kak%C3%A1)_01.jpg?width=600", // Kit not yet audited
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Ricardo_Izecson_dos_Santos_Leite_(Kak%C3%A1)_01.jpg?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["Sao Paulo","São Paulo FC","Sao Paulo FC"], toClub: ["Real Madrid CF"] },
-    // note: First Milan spell (2003-2009).
   },
   {
     id: "andriy-shevchenko",
@@ -447,10 +454,9 @@ const PLAYERS = [
     featuredClub: "AC Milan",
     fromClub: "Dynamo Kyiv",
     toClub: "Chelsea",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Andriy_Shevchenko_Ukraine-Sweden_Euro_2012.JPG?width=600", // Ukraine at Euro 2012
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Andriy_Shevchenko_Ukraine-Sweden_Euro_2012.JPG?width=600",
     photoNeutral: true,
     altSpellings: { fromClub: ["Dynamo Kiev","Dinamo Kiev","Dinamo Kyiv"], toClub: ["Chelsea FC"] },
-    // note: First Milan spell (1999-2006).
   },
   {
     id: "gabriel-batistuta",
@@ -459,8 +465,8 @@ const PLAYERS = [
     featuredClub: "Fiorentina",
     fromClub: "Boca Juniors",
     toClub: "Roma",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Gabriel_Batistuta_en_interview_avec_Florent_Torchut.jpg?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["Boca","CA Boca Juniors"], toClub: ["AS Roma"] },
   },
   {
@@ -470,10 +476,9 @@ const PLAYERS = [
     featuredClub: "Parma",
     fromClub: "River Plate",
     toClub: "Lazio",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Chelsea_Legends_1_Inter_Forever_4_(42278922042).jpg?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["CA River Plate"], toClub: ["SS Lazio"] },
-    // note: The 2000 move to Lazio was a world-record transfer at the time.
   },
   {
     id: "christian-vieri",
@@ -483,9 +488,9 @@ const PLAYERS = [
     fromClub: "Lazio",
     toClub: "AC Milan",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Christian Vieri", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["SS Lazio"], toClub: ["Milan"] },
-    // note: The 1999 move from Lazio was a world-record transfer at the time.
   },
   {
     id: "pavel-nedved",
@@ -495,7 +500,8 @@ const PLAYERS = [
     fromClub: "Sparta Prague",
     toClub: "Juventus",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Pavel Nedvěd", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["AC Sparta Prague","Sparta Praha"], toClub: ["Juve","Juventus FC"] },
   },
   {
@@ -505,7 +511,7 @@ const PLAYERS = [
     featuredClub: "Inter Milan",
     fromClub: "Juventus",
     toClub: "Barcelona",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Zlatan_Ibrahimovi%C4%87_Euro_2012_vs_France_01.jpg?width=600", // Sweden at Euro 2012
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Zlatan_Ibrahimovi%C4%87_Euro_2012_vs_France_01.jpg?width=600",
     photoNeutral: true,
     altSpellings: { fromClub: ["Juve","Juventus FC"], toClub: ["FC Barcelona","Barca","Barça"] },
   },
@@ -517,7 +523,8 @@ const PLAYERS = [
     fromClub: "Monaco",
     toClub: "Juventus",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Lilian Thuram", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["AS Monaco"], toClub: ["Juve","Juventus FC"] },
   },
   {
@@ -528,7 +535,8 @@ const PLAYERS = [
     fromClub: "Lazio",
     toClub: "Montreal Impact",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Alessandro Nesta", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["SS Lazio"], toClub: ["Montreal","CF Montreal","CF Montréal"] },
   },
   {
@@ -538,10 +546,9 @@ const PLAYERS = [
     featuredClub: "AC Milan",
     fromClub: "Inter Milan",
     toClub: "Juventus",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Andrea_Pirlo_NYCFC.JPG?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["Inter","Internazionale","FC Internazionale"], toClub: ["Juve","Juventus FC"] },
-    // note: Owned by Inter with Reggina/Brescia loans before the 2001 Milan move.
   },
   {
     id: "gianluigi-buffon",
@@ -550,10 +557,9 @@ const PLAYERS = [
     featuredClub: "Juventus",
     fromClub: "Parma",
     toClub: "Paris Saint-Germain",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Gianluigi_Buffon_Euro_2012_vs_England_03.JPG?width=600", // Italy at Euro 2012
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Gianluigi_Buffon_Euro_2012_vs_England_03.JPG?width=600",
     photoNeutral: true,
     altSpellings: { fromClub: ["Parma Calcio","AC Parma"], toClub: ["PSG","Paris SG","Paris Saint Germain","Paris St-Germain","Paris St Germain"] },
-    // note: First Juventus spell (2001-2018).
   },
   {
     id: "paul-pogba",
@@ -562,10 +568,9 @@ const PLAYERS = [
     featuredClub: "Juventus",
     fromClub: "Manchester United",
     toClub: "Manchester United",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Paul_Pogba_World_Cup_Trophy.jpg?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["Man United","Man Utd","Manchester Utd","MUFC"], toClub: ["Man United","Man Utd","Manchester Utd","MUFC"] },
-    // note: First Juventus spell (2012-2016); came from and returned to Manchester United.
   },
   {
     id: "edinson-cavani",
@@ -575,9 +580,9 @@ const PLAYERS = [
     fromClub: "Palermo",
     toClub: "Paris Saint-Germain",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Edinson Cavani", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["US Palermo"], toClub: ["PSG","Paris SG","Paris Saint Germain","Paris St-Germain","Paris St Germain"] },
-    // note: Napoli move began as a 2010 loan-with-obligation from Palermo.
   },
   {
     id: "roberto-baggio",
@@ -587,7 +592,8 @@ const PLAYERS = [
     fromClub: "Fiorentina",
     toClub: "AC Milan",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Roberto Baggio", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["ACF Fiorentina"], toClub: ["Milan"] },
   },
   {
@@ -598,9 +604,9 @@ const PLAYERS = [
     fromClub: "Sampdoria",
     toClub: "Paris Saint-Germain",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Mauro Icardi", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["UC Sampdoria"], toClub: ["PSG","Paris SG","Paris Saint Germain","Paris St-Germain","Paris St Germain"] },
-    // note: PSG move began as a 2019 loan, made permanent in 2020.
   },
   {
     id: "dennis-bergkamp",
@@ -610,7 +616,8 @@ const PLAYERS = [
     fromClub: "Ajax",
     toClub: "Arsenal",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Dennis Bergkamp", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["AFC Ajax","Ajax Amsterdam"], toClub: ["Arsenal FC","The Gunners"] },
   },
   {
@@ -620,8 +627,8 @@ const PLAYERS = [
     featuredClub: "Lazio",
     fromClub: "Parma",
     toClub: "Manchester United",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Juan-Sebasti%C3%A1n-Ver%C3%B3n-EstudiantesLP-2013.JPG?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["Parma Calcio","AC Parma"], toClub: ["Man United","Man Utd","Manchester Utd","MUFC"] },
   },
   {
@@ -631,7 +638,7 @@ const PLAYERS = [
     featuredClub: "Borussia Dortmund",
     fromClub: "Lech Poznań",
     toClub: "Bayern Munich",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Robert_Lewandowski_2018%2C_JAP-POL_(cropped).jpg?width=600", // Poland, 2018 World Cup
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Robert_Lewandowski_2018.jpg?width=600",
     photoNeutral: true,
     altSpellings: { fromClub: ["Lech Poznan"], toClub: ["Bayern","FC Bayern","Bayern München","Bayern Munchen","FC Bayern Munich"] },
   },
@@ -643,9 +650,9 @@ const PLAYERS = [
     fromClub: "Bayern Munich",
     toClub: "Bayern Munich",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Mats Hummels", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["Bayern","FC Bayern","Bayern München","Bayern Munchen","FC Bayern Munich"], toClub: ["Bayern","FC Bayern","Bayern München","Bayern Munchen","FC Bayern Munich"] },
-    // note: First Dortmund spell began as a 2008 loan from Bayern, permanent in 2009; came from and returned to Bayern.
   },
   {
     id: "ousmane-dembele",
@@ -654,8 +661,8 @@ const PLAYERS = [
     featuredClub: "Borussia Dortmund",
     fromClub: "Rennes",
     toClub: "Barcelona",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Ousmane_Demb%C3%A9l%C3%A9_World_Cup_Trophy.jpg?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["Stade Rennais"], toClub: ["FC Barcelona","Barca","Barça"] },
   },
   {
@@ -666,7 +673,8 @@ const PLAYERS = [
     fromClub: "Saint-Étienne",
     toClub: "Arsenal",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Pierre-Emerick Aubameyang", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["Saint-Etienne","St Etienne","AS Saint-Étienne","ASSE"], toClub: ["Arsenal FC","The Gunners"] },
   },
   {
@@ -677,9 +685,9 @@ const PLAYERS = [
     fromClub: "Manchester City",
     toClub: "Manchester United",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Jadon Sancho", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["Man City","MCFC"], toClub: ["Man United","Man Utd","Manchester Utd","MUFC"] },
-    // note: First Dortmund spell (2017-2021).
   },
   {
     id: "arjen-robben",
@@ -688,10 +696,10 @@ const PLAYERS = [
     featuredClub: "Bayern Munich",
     fromClub: "Real Madrid",
     toClub: "Groningen",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Arjen_Robben.JPG?width=600", // Kit not yet audited
-    photoNeutral: false,
+    photoUrl: null,
+    photoNeutral: true,
+    wiki: "Arjen Robben", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["Real Madrid CF"], toClub: ["FC Groningen"] },
-    // note: Retired in 2019, then made a comeback with boyhood club Groningen in 2020.
   },
   {
     id: "franck-ribery",
@@ -700,8 +708,8 @@ const PLAYERS = [
     featuredClub: "Bayern Munich",
     fromClub: "Marseille",
     toClub: "Fiorentina",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Franck_Rib%C3%A9ry_20120611.jpg?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["Olympique de Marseille","Olympique Marseille","OM"], toClub: ["ACF Fiorentina"] },
   },
   {
@@ -711,10 +719,9 @@ const PLAYERS = [
     featuredClub: "Bayern Munich",
     fromClub: "Bayer Leverkusen",
     toClub: "Chelsea",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Michael_Ballack_(Confed-Cup_2005).JPG?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["Leverkusen","Bayer 04 Leverkusen"], toClub: ["Chelsea FC"] },
-    // note: First Bayern spell (2002-2006).
   },
   {
     id: "lothar-matthaus",
@@ -723,10 +730,9 @@ const PLAYERS = [
     featuredClub: "Bayern Munich",
     fromClub: "Borussia Mönchengladbach",
     toClub: "Inter Milan",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/6423_Lothar_Matth%C3%A4us.JPG?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["Gladbach","Borussia Monchengladbach","Mönchengladbach","Monchengladbach"], toClub: ["Inter","Internazionale","FC Internazionale"] },
-    // note: First Bayern spell (1984-1988).
   },
   {
     id: "kevin-de-bruyne",
@@ -735,10 +741,9 @@ const PLAYERS = [
     featuredClub: "Wolfsburg",
     fromClub: "Chelsea",
     toClub: "Manchester City",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Kevin_De_Bruyne_201807091.jpg?width=600", // Belgium, 2018 World Cup
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Kevin_De_Bruyne_201807091.jpg?width=600",
     photoNeutral: true,
     altSpellings: { fromClub: ["Chelsea FC"], toClub: ["Man City","MCFC"] },
-    // note: Earlier Werder Bremen spell was a loan from Chelsea.
   },
   {
     id: "naby-keita",
@@ -748,7 +753,8 @@ const PLAYERS = [
     fromClub: "Red Bull Salzburg",
     toClub: "Liverpool",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Naby Keïta", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["RB Salzburg","Salzburg","FC Salzburg"], toClub: ["Liverpool FC"] },
   },
   {
@@ -759,9 +765,9 @@ const PLAYERS = [
     fromClub: "VfB Stuttgart",
     toClub: "Chelsea",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Timo Werner", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["Stuttgart"], toClub: ["Chelsea FC"] },
-    // note: First Leipzig spell (2016-2020).
   },
   {
     id: "granit-xhaka",
@@ -771,7 +777,8 @@ const PLAYERS = [
     fromClub: "Basel",
     toClub: "Arsenal",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Granit Xhaka", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["FC Basel"], toClub: ["Arsenal FC","The Gunners"] },
   },
   {
@@ -781,8 +788,8 @@ const PLAYERS = [
     featuredClub: "Wolfsburg",
     fromClub: "Teplice",
     toClub: "Manchester City",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Edin_Dzeko_at_Interview_(2020).png?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["FK Teplice"], toClub: ["Man City","MCFC"] },
   },
   {
@@ -792,8 +799,8 @@ const PLAYERS = [
     featuredClub: "Hoffenheim",
     fromClub: "Figueirense",
     toClub: "Liverpool",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Roberto_Firmino_no_Al-Ahli_(cropped).png?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["Figueirense FC"], toClub: ["Liverpool FC"] },
   },
   {
@@ -803,8 +810,9 @@ const PLAYERS = [
     featuredClub: "Bayer Leverkusen",
     fromClub: "Hamburger SV",
     toClub: "Tottenham Hotspur",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Son_Heung-min_2016.jpg?width=600", // Kit not yet audited (2016)
-    photoNeutral: false,
+    photoUrl: null,
+    photoNeutral: true,
+    wiki: "Son Heung-min", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["Hamburg","HSV"], toClub: ["Tottenham","Spurs"] },
   },
   {
@@ -815,7 +823,8 @@ const PLAYERS = [
     fromClub: "Juventus",
     toClub: "Barcelona",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Arturo Vidal", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["Juve","Juventus FC"], toClub: ["FC Barcelona","Barca","Barça"] },
   },
   {
@@ -825,7 +834,7 @@ const PLAYERS = [
     featuredClub: "Napoli",
     fromClub: "Barcelona",
     toClub: "Sevilla",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Diego_Maradona_Argentina_1986_cup_Azteca_Stadium.jpg?width=600", // Argentina, 1986 World Cup
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Diego_Maradona_Argentina_1986_cup_Azteca_Stadium.jpg?width=600",
     photoNeutral: true,
     altSpellings: { fromClub: ["FC Barcelona","Barca","Barça"], toClub: ["Sevilla FC","Seville"] },
   },
@@ -836,8 +845,8 @@ const PLAYERS = [
     featuredClub: "Juventus",
     fromClub: "Bordeaux",
     toClub: "Real Madrid",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Zinedine_Zidane_(cropped).JPG?width=600", // Kit not yet audited
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Zinedine_zidane_wcf_2006-edit.jpg?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["Girondins de Bordeaux","Girondins"], toClub: ["Real Madrid CF"] },
   },
   {
@@ -847,10 +856,9 @@ const PLAYERS = [
     featuredClub: "Inter Milan",
     fromClub: "Barcelona",
     toClub: "Real Madrid",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Ronaldo_(brazil).JPG?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["FC Barcelona","Barca","Barça"], toClub: ["Real Madrid CF"] },
-    // note: The original Brazilian Ronaldo (R9).
   },
   {
     id: "romario",
@@ -860,7 +868,8 @@ const PLAYERS = [
     fromClub: "PSV Eindhoven",
     toClub: "Flamengo",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Romário", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["PSV"], toClub: ["CR Flamengo"] },
   },
   {
@@ -871,9 +880,9 @@ const PLAYERS = [
     fromClub: "Inter Milan",
     toClub: "Real Madrid",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Fabio Cannavaro", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["Inter","Internazionale","FC Internazionale"], toClub: ["Real Madrid CF"] },
-    // note: Juventus spell 2004-2006, ending after the 2006 World Cup win.
   },
   {
     id: "johan-cruyff",
@@ -882,10 +891,9 @@ const PLAYERS = [
     featuredClub: "Barcelona",
     fromClub: "Ajax",
     toClub: "Los Angeles Aztecs",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Johan_Cruijff_with_Chantal_1973.jpg?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["AFC Ajax","Ajax Amsterdam"], toClub: ["LA Aztecs"] },
-    // note: First Barcelona spell (1973-1978).
   },
   {
     id: "michel-platini",
@@ -895,7 +903,8 @@ const PLAYERS = [
     fromClub: "Nancy",
     toClub: "Juventus",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Michel Platini", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["AS Nancy","AS Nancy-Lorraine"], toClub: ["Juve","Juventus FC"] },
   },
   {
@@ -905,10 +914,9 @@ const PLAYERS = [
     featuredClub: "New York Cosmos",
     fromClub: "Bayern Munich",
     toClub: "Hamburger SV",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Franz_Beckenbauer.JPG?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["Bayern","FC Bayern","Bayern München","Bayern Munchen","FC Bayern Munich"], toClub: ["Hamburg","HSV"] },
-    // note: First Cosmos spell (1977-1980); returned to the Cosmos in 1983.
   },
   {
     id: "zico",
@@ -917,10 +925,9 @@ const PLAYERS = [
     featuredClub: "Udinese",
     fromClub: "Flamengo",
     toClub: "Flamengo",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Zico.JPG?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["CR Flamengo"], toClub: ["CR Flamengo"] },
-    // note: Came from and returned to Flamengo - both answers are the same club.
   },
   {
     id: "socrates",
@@ -929,8 +936,8 @@ const PLAYERS = [
     featuredClub: "Fiorentina",
     fromClub: "Corinthians",
     toClub: "Flamengo",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Socrates_(futebolista)_participando_do_movimento_pol%C3%ADtico_Diretas_J%C3%A1.jpg?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["SC Corinthians","Corinthians Paulista"], toClub: ["CR Flamengo"] },
   },
   {
@@ -940,10 +947,9 @@ const PLAYERS = [
     featuredClub: "Barcelona",
     fromClub: "CSKA Sofia",
     toClub: "Parma",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Stoichkov_in_2011.JPG?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["CSKA"], toClub: ["Parma Calcio","AC Parma"] },
-    // note: First Barcelona spell (1990-1995); returned to Barcelona in 1996.
   },
   {
     id: "gary-lineker",
@@ -952,8 +958,8 @@ const PLAYERS = [
     featuredClub: "Barcelona",
     fromClub: "Everton",
     toClub: "Tottenham Hotspur",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Gary_Lineker_(cropped).jpg?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["Everton FC"], toClub: ["Tottenham","Spurs"] },
   },
   {
@@ -963,8 +969,8 @@ const PLAYERS = [
     featuredClub: "Bayern Munich",
     fromClub: "Werder Bremen",
     toClub: "Lazio",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/FIFA_WC-qualification_2014_-_Austria_vs._Germany_2012-09-11_-_Miroslav_Klose_01.JPG?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["Bremen","SV Werder Bremen"], toClub: ["SS Lazio"] },
   },
   {
@@ -974,10 +980,9 @@ const PLAYERS = [
     featuredClub: "Bayern Munich",
     fromClub: "Borussia Dortmund",
     toClub: "Borussia Dortmund",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/FIFA_WC-qualification_2014_-_Austria_vs._Germany_2012-09-11_-_Mario_G%C3%B6tze_01.JPG?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["Dortmund","BVB"], toClub: ["Dortmund","BVB"] },
-    // note: Bayern spell 2013-2016; came from and returned to Dortmund. Scored the 2014 World Cup final winner.
   },
   {
     id: "james-rodriguez",
@@ -987,9 +992,9 @@ const PLAYERS = [
     fromClub: "Porto",
     toClub: "Real Madrid",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "James Rodríguez", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["FC Porto"], toClub: ["Real Madrid CF"] },
-    // note: 2014 World Cup Golden Boot winner; Real bought him straight after the tournament.
   },
   {
     id: "kylian-mbappe",
@@ -998,10 +1003,9 @@ const PLAYERS = [
     featuredClub: "Paris Saint-Germain",
     fromClub: "Monaco",
     toClub: "Real Madrid",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Kylian_Mbapp%C3%A9_France.jpg?width=600", // France national team
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Kylian_Mbapp%C3%A9_France.jpg?width=600",
     photoNeutral: true,
     altSpellings: { fromClub: ["AS Monaco"], toClub: ["Real Madrid CF"] },
-    // note: PSG move began as a 2017 loan, made permanent in 2018.
   },
   {
     id: "jude-bellingham",
@@ -1010,7 +1014,7 @@ const PLAYERS = [
     featuredClub: "Borussia Dortmund",
     fromClub: "Birmingham City",
     toClub: "Real Madrid",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Jude_Bellingham_2022-11-21_1.jpg?width=600", // England, 2022 World Cup
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Jude_Bellingham_2022-11-21_1.jpg?width=600",
     photoNeutral: true,
     altSpellings: { fromClub: ["Birmingham"], toClub: ["Real Madrid CF"] },
   },
@@ -1021,8 +1025,9 @@ const PLAYERS = [
     featuredClub: "Borussia Dortmund",
     fromClub: "Red Bull Salzburg",
     toClub: "Manchester City",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Erling_Haaland_June_2025.jpg?width=600", // Kit not yet audited (June 2025)
-    photoNeutral: false,
+    photoUrl: null,
+    photoNeutral: true,
+    wiki: "Erling Haaland", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["RB Salzburg","Salzburg","FC Salzburg"], toClub: ["Man City","MCFC"] },
   },
   {
@@ -1033,9 +1038,9 @@ const PLAYERS = [
     fromClub: "Charleroi",
     toClub: "Napoli",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Victor Osimhen", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["Sporting Charleroi","Royal Charleroi"], toClub: ["SSC Napoli"] },
-    // note: Had an earlier Wolfsburg spell before Charleroi.
   },
   {
     id: "darwin-nunez",
@@ -1045,7 +1050,8 @@ const PLAYERS = [
     fromClub: "Almería",
     toClub: "Liverpool",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Darwin Núñez", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["Almeria","UD Almeria"], toClub: ["Liverpool FC"] },
   },
   {
@@ -1055,10 +1061,9 @@ const PLAYERS = [
     featuredClub: "Brighton & Hove Albion",
     fromClub: "Argentinos Juniors",
     toClub: "Liverpool",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Alexis_Mac_Allister_WC_2022.jpg?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["Argentinos"], toClub: ["Liverpool FC"] },
-    // note: Signed in January 2019 but loaned back to Argentinos Juniors (and Boca) before playing for Brighton.
   },
   {
     id: "moises-caicedo",
@@ -1068,7 +1073,8 @@ const PLAYERS = [
     fromClub: "Independiente del Valle",
     toClub: "Chelsea",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Moisés Caicedo", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["IDV"], toClub: ["Chelsea FC"] },
   },
   {
@@ -1079,7 +1085,8 @@ const PLAYERS = [
     fromClub: "Dinamo Zagreb",
     toClub: "Manchester City",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Joško Gvardiol", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["GNK Dinamo Zagreb","Dynamo Zagreb"], toClub: ["Man City","MCFC"] },
   },
   {
@@ -1090,7 +1097,8 @@ const PLAYERS = [
     fromClub: "Bordeaux",
     toClub: "Real Madrid",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Aurélien Tchouaméni", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["Girondins de Bordeaux","Girondins"], toClub: ["Real Madrid CF"] },
   },
   {
@@ -1100,10 +1108,9 @@ const PLAYERS = [
     featuredClub: "Real Sociedad",
     fromClub: "Borussia Dortmund",
     toClub: "Newcastle United",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/UEFA_EURO_qualifiers_Sweden_vs_Spain_20191015_Alexander_Isak_3.jpg?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["Dortmund","BVB"], toClub: ["Newcastle","NUFC"] },
-    // note: Willem II loan during the Sociedad spell; joined Liverpool from Newcastle in 2025.
   },
   {
     id: "bruno-fernandes",
@@ -1112,8 +1119,8 @@ const PLAYERS = [
     featuredClub: "Sporting CP",
     fromClub: "Sampdoria",
     toClub: "Manchester United",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Bruno_Fernandes_Portugal%2C_2018.jpg?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["UC Sampdoria"], toClub: ["Man United","Man Utd","Manchester Utd","MUFC"] },
   },
   {
@@ -1123,10 +1130,9 @@ const PLAYERS = [
     featuredClub: "Real Madrid",
     fromClub: "São Paulo",
     toClub: "Manchester United",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Casemiro.jpg?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["Sao Paulo","São Paulo FC","Sao Paulo FC"], toClub: ["Man United","Man Utd","Manchester Utd","MUFC"] },
-    // note: Madrid move began as a 2013 loan from São Paulo; also had a Porto loan mid-spell.
   },
   {
     id: "rodri",
@@ -1136,7 +1142,8 @@ const PLAYERS = [
     fromClub: "Villarreal",
     toClub: "Manchester City",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Rodri", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["Villarreal CF","Villareal"], toClub: ["Man City","MCFC"] },
   },
   {
@@ -1146,10 +1153,9 @@ const PLAYERS = [
     featuredClub: "Roma",
     fromClub: "Chelsea",
     toClub: "Liverpool",
-    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Mohamed_Salah.JPG?width=600", // Kit not yet audited
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Mohamed_Salah_Ghaly.jpg?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["Chelsea FC"], toClub: ["Liverpool FC"] },
-    // note: Roma move began as a 2015 loan from Chelsea, made permanent in 2016.
   },
   {
     id: "dominik-szoboszlai",
@@ -1158,8 +1164,8 @@ const PLAYERS = [
     featuredClub: "RB Leipzig",
     fromClub: "Red Bull Salzburg",
     toClub: "Liverpool",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Szoboszlaiirl.jpg?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["RB Salzburg","Salzburg","FC Salzburg"], toClub: ["Liverpool FC"] },
   },
   {
@@ -1169,10 +1175,9 @@ const PLAYERS = [
     featuredClub: "Napoli",
     fromClub: "Dinamo Batumi",
     toClub: "Paris Saint-Germain",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Khvicha_Kvaratskhelia_2019.jpg?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["Dynamo Batumi"], toClub: ["PSG","Paris SG","Paris Saint Germain","Paris St-Germain","Paris St Germain"] },
-    // note: Joined PSG in January 2025.
   },
   {
     id: "julian-alvarez",
@@ -1182,7 +1187,8 @@ const PLAYERS = [
     fromClub: "River Plate",
     toClub: "Atlético Madrid",
     photoUrl: null,
-    photoNeutral: false,
+    photoNeutral: true,
+    wiki: "Julián Álvarez", // photo resolved at runtime from Wikipedia
     altSpellings: { fromClub: ["CA River Plate"], toClub: ["Atletico Madrid","Atletico","Atleti","Atlético de Madrid"] },
   },
   {
@@ -1192,9 +1198,8 @@ const PLAYERS = [
     featuredClub: "Inter Milan",
     fromClub: "Real Madrid",
     toClub: "Paris Saint-Germain",
-    photoUrl: null,
-    photoNeutral: false,
+    photoUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Iran-Morocco_by_soccer.ru_14_(Achraf_Hakimi).jpg?width=600",
+    photoNeutral: true,
     altSpellings: { fromClub: ["Real Madrid CF"], toClub: ["PSG","Paris SG","Paris Saint Germain","Paris St-Germain","Paris St Germain"] },
-    // note: Dortmund spell was a loan from Real Madrid, so Inter signed him FROM Real Madrid in 2020.
   },
 ];

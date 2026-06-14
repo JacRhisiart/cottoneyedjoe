@@ -15,11 +15,29 @@
     </header>
 
     <main>
-      <!-- Category menu -->
+      <!-- Menu -->
       <section id="screen-menu" class="screen">
-        <h2 class="screen-title">Pick a category</h2>
+        <!-- Daily challenge -->
+        <button id="daily-card" class="daily-card" type="button">
+          <div class="daily-head">
+            <span class="daily-kicker">Daily Challenge</span>
+            <span id="daily-status" class="daily-status"></span>
+          </div>
+          <div class="daily-body">
+            <span class="daily-cat" id="daily-cat"></span>
+            <span class="daily-sub" id="daily-sub">10 footballers · new every day</span>
+          </div>
+        </button>
+
+        <div class="menu-stats" id="menu-stats"></div>
+
+        <div class="menu-actions">
+          <button id="open-leaderboard" class="btn btn-ghost" type="button">🏆 Leaderboard</button>
+        </div>
+
+        <h2 class="screen-title">Practice by category</h2>
         <div id="category-list" class="category-grid"></div>
-        <p class="menu-note">10 footballers per round &middot; for each one, name the club they joined from and the club they left for.</p>
+        <p class="menu-note">For each footballer, name the club they joined from and the club they left for. Practice rounds aren't scored on the leaderboard.</p>
       </section>
 
       <!-- Round -->
@@ -36,6 +54,7 @@
             <img id="player-photo" class="hidden" alt="" referrerpolicy="no-referrer" />
             <div id="photo-fallback" class="photo-fallback hidden" aria-hidden="true"></div>
           </div>
+          <p id="seen-note" class="seen-note hidden"></p>
           <h2 id="player-name" class="player-name"></h2>
           <p id="featured-line" class="featured-line"></p>
           <h3 id="question" class="question"></h3>
@@ -55,30 +74,59 @@
             <button id="next-btn" class="btn btn-primary" type="button">Next</button>
           </div>
         </div>
+        <button id="quit-btn" class="btn btn-ghost btn-small" type="button">Quit to menu</button>
       </section>
 
-      <!-- End-of-round summary -->
+      <!-- Summary -->
       <section id="screen-summary" class="screen hidden">
-        <h2 class="screen-title">Full time!</h2>
+        <h2 class="screen-title" id="sum-title">Full time!</h2>
         <div class="summary-stats">
           <div class="stat"><span id="sum-score" class="stat-big"></span><span class="stat-label">score</span></div>
           <div class="stat"><span id="sum-accuracy" class="stat-big"></span><span class="stat-label">accuracy</span></div>
           <div class="stat"><span id="sum-streak" class="stat-big"></span><span class="stat-label">best streak</span></div>
         </div>
         <p id="sum-verdict" class="sum-verdict"></p>
+
+        <!-- Leaderboard submission -->
+        <div id="submit-box" class="submit-box hidden">
+          <label for="name-input" id="submit-label">Enter a name for the leaderboard</label>
+          <div class="submit-row">
+            <input id="name-input" type="text" maxlength="20" placeholder="Your name"
+                   autocomplete="off" autocapitalize="words" spellcheck="false" />
+            <button id="submit-score" class="btn btn-primary" type="button">Submit</button>
+          </div>
+          <p id="submit-msg" class="submit-msg"></p>
+        </div>
+
         <ul id="sum-list" class="sum-list"></ul>
         <div class="summary-actions">
           <button id="again-btn" class="btn btn-primary" type="button">Play Again</button>
-          <button id="menu-btn" class="btn btn-ghost" type="button">Change Category</button>
+          <button id="view-lb-btn" class="btn btn-ghost" type="button">🏆 Leaderboard</button>
+          <button id="menu-btn" class="btn btn-ghost" type="button">Menu</button>
+        </div>
+      </section>
+
+      <!-- Leaderboard -->
+      <section id="screen-leaderboard" class="screen hidden">
+        <h2 class="screen-title">🏆 Leaderboard</h2>
+        <div class="lb-tabs">
+          <button class="lb-tab active" data-scope="daily" type="button">Today's Daily</button>
+          <button class="lb-tab" data-scope="all" type="button">All-time</button>
+        </div>
+        <p id="lb-note" class="lb-note"></p>
+        <ol id="lb-list" class="lb-list"></ol>
+        <div class="summary-actions">
+          <button id="lb-back" class="btn btn-ghost" type="button">Back</button>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      Transfer data compiled from Wikidata / Wikipedia &middot; photos from Wikimedia Commons (freely licensed)
+      Transfer data from Wikidata / Wikipedia &middot; photos from Wikimedia Commons (freely licensed)
     </footer>
   </div>
 
+  <script src="config.js"></script>
   <script src="players.js"></script>
   <script src="game.js"></script>
 </body>
