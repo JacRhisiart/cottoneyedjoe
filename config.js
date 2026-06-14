@@ -7,5 +7,5 @@
  *   and the leaderboard becomes global (shared across everyone).
  */
 const COTTON_CONFIG = {
-  leaderboardUrl: "",
+  leaderboardUrl: "https://cottoneyedjoe-leaderboard.jacrhisiart1.workers.dev",
 };
