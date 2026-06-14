@@ -2,51 +2,83 @@
 
 *Where did you come from? Where did you go?*
 
-A static football transfer-knowledge game. Each round shows you 10 footballers
-and, for each one, a featured spell at a club. You answer two questions:
+A static football transfer-knowledge game. Pick a footballer, see their photo and a
+featured spell at a club, and answer two questions:
 
 1. **Where did you come from?** — the club they joined the featured club from
 2. **Where did you go?** — the club they joined when the featured spell ended
 
-Type your answer into the box (a live autocomplete suggests club names as you
-type), rack up your score and streak, and get a full-time report at the end.
+Type your answer (a live autocomplete suggests club names as you type), build a
+score and streak, and get a full-time report.
 
-Everything is plain HTML/CSS/vanilla JavaScript — no build step, no backend,
-no runtime API calls. The dataset is baked into `players.js`.
+Everything is plain HTML/CSS/vanilla JavaScript — no build step. The dataset is
+baked into `players.js`. The only network calls at runtime are optional:
+Wikipedia for a handful of player photos, and your leaderboard Worker.
+
+## Features
+
+- **Daily Challenge** — 10 footballers and a rotating **daily category**, the
+  same for everyone, regenerated every day (seeded by the UTC date). One scored
+  attempt per day; re-opening it shows your result.
+- **Practice by category** — unscored rounds for any of the six categories or a
+  Mix / Random pool.
+- **Progress memory** — the game remembers, per device, which players you've
+  answered (and whether you got each one right), which categories you've played
+  and your best score, plus overall stats. Seen players show a "last time" hint.
+- **Global leaderboard** — submit your daily score under a name; view *Today's
+  Daily* and *All-time* boards. Backed by a Cloudflare Worker (see below); falls
+  back to a local board until you deploy one.
+- **Profanity filter** — names are screened in the browser **and** on the Worker
+  (leet-speak and spaced-out evasion handled; "Scunthorpe" is fine).
+- **Clue-free photos** — never the featured club's kit/crest; freely-licensed
+  Wikimedia images, with a Wikipedia fallback so every player shows a picture.
 
 ## Play it locally
 
-Any static file server works. For example:
+Any static file server works:
 
 ```bash
 python3 -m http.server 8000
 # then open http://localhost:8000
 ```
 
-(Opening `index.html` directly from disk also works in most browsers.)
-
 ## Deploy to GitHub Pages
 
 1. Push this repository to GitHub (files at the repository root).
-2. On GitHub: **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select branch **`main`** and folder **`/ (root)`**, then **Save**.
-5. Your game appears at `https://<username>.github.io/<repo>/` within a minute or two.
+2. **Settings → Pages → Build and deployment → Deploy from a branch**.
+3. Branch **`main`**, folder **`/ (root)`**, **Save**.
+4. The game appears at `https://<username>.github.io/<repo>/` within a minute or two.
+
+## Global leaderboard (Cloudflare Worker)
+
+The leaderboard is global once you deploy the included Worker. Until then it
+runs in **local mode** (scores saved on the player's own device).
+
+1. Follow `worker/README.md` to deploy `worker/worker.js` (free Cloudflare
+   account + `wrangler`; ~5 minutes). It uses Workers KV — no database to run.
+2. Put the Worker URL in `config.js`:
+   ```js
+   const COTTON_CONFIG = {
+     leaderboardUrl: "https://cottoneyedjoe-leaderboard.yourname.workers.dev",
+   };
+   ```
+3. Commit and push. Scores are now shared across everyone.
 
 ## Files
 
 | File | Purpose |
 | --- | --- |
-| `index.html` | Markup for the three screens (menu / round / summary) |
+| `index.html` | Markup for the menu / round / summary / leaderboard screens |
 | `style.css` | All styling; mobile-responsive, no framework |
-| `game.js` | Game engine: rounds, autocomplete, matching, scoring |
+| `game.js` | Engine: daily mode, rounds, autocomplete, scoring, persistence, leaderboard, profanity |
 | `players.js` | The dataset — one object per footballer |
+| `config.js` | Your leaderboard Worker URL (empty = local mode) |
+| `worker/` | The Cloudflare Worker that stores global scores |
 | `tools/` | Offline pipeline for extending the dataset (not used at runtime) |
 
 ## The dataset
 
-`players.js` holds an array of objects; adding a footballer is appending one
-object:
+`players.js` is an array of objects; adding a footballer is appending one:
 
 ```js
 {
@@ -63,72 +95,49 @@ object:
 ```
 
 Categories are read from the data — invent a new `category` string and it
-automatically appears on the menu (plus the built-in **Mix / Random**).
+appears on the menu (plus the built-in **Mix / Random**, and it joins the daily
+rotation).
 
-### Data rules
+### Photos
+
+Images must give no clues, so they never show the featured club's kit/crest —
+national-team or portrait shots are preferred, from **freely-licensed Wikimedia
+Commons** files served via `Special:FilePath`.
+
+- ~55 players use a curated, audited Commons file (`photoUrl`, `photoNeutral: true`).
+- The rest carry a `wiki` field instead; `game.js` resolves their lead image
+  from the Wikipedia REST API at runtime, so **every player shows a picture**.
+  To pin one of these to a specific Commons file, set its `photoUrl`/`photoNeutral`
+  and remove the `wiki` field.
+
+`tools/check_photos.mjs` verifies the static `photoUrl`s still resolve (run it
+somewhere with access to `commons.wikimedia.org`).
+
+### Data rules & verification
 
 - `fromClub`/`toClub` are the **senior, permanent** moves adjacent to the
-  featured spell. Loan tangles (e.g. moves that started as loans) are noted in
-  comments inside `players.js`; the game uses the common reading.
-- National teams are not clubs; youth/academy moves don't count as a
-  `fromClub` (players who came through the featured club's academy aren't
-  suitable entries).
-
-### Photo rule (important)
-
-Images must give no clues. Use **only freely-licensed Wikimedia Commons**
-files (served via `Special:FilePath`), and prefer national-team or
-portrait shots. **Never** use a photo showing the featured club's kit or
-crest.
-
-`photoNeutral` exists so images can be audited and swapped:
-
-- `photoNeutral: true` — a human checked the image; the game shows it.
-- `photoNeutral: false` — not audited yet (or no photo); the game shows a
-  neutral initials placeholder instead, so an unaudited image can never
-  leak an answer.
-
-Currently 14 entries have audited neutral photos; several more have a
-candidate `photoUrl` stored but flagged `false` pending a look. Everyone
-else gets the placeholder until a suitable Commons image is found.
-
-### Sourcing & verification status
-
-- Transfer chains were compiled from well-documented football history and
-  cross-checked against Wikipedia-derived sources. The trickiest cases
-  (loan tangles, comebacks like Robben→Groningen, and very recent moves
-  like Modrić→Milan) were individually re-verified online.
-- Sources: Wikidata (CC0), Wikipedia/Wikimedia Commons. No Transfermarkt or
-  other reuse-restricted sources.
-- Anything with a nuance carries a `// note:` comment in `players.js` rather
-  than being silently smoothed over.
+  featured spell. Loan tangles and comebacks are flagged in comments; the game
+  uses the common reading. Wayne Rooney / Zico / Rakitić etc. legitimately have
+  the same from- and to-club.
+- Sources: Wikidata (CC0), Wikipedia / Wikimedia Commons. No Transfermarkt or
+  other reuse-restricted sources. The trickiest chains were re-verified online.
 
 ### Extending toward 100+ players
 
-`tools/` contains the one-time offline pipeline (requires network access to
-`query.wikidata.org`):
+`tools/` contains the one-time offline pipeline (needs `query.wikidata.org`):
 
 ```bash
-# 1. Pull candidate careers from Wikidata and apply cleaning rules
-node tools/build_players.mjs > candidates.json
-
-# 2. Review candidates manually (loans/youth/national-team issues are
-#    flagged, never guessed), assign categories, audit photos, then move
-#    the good ones into players.js
-
-# 3. Confirm all photo URLs still resolve
-node tools/check_photos.mjs
+node tools/build_players.mjs > candidates.json   # pull + clean Wikidata careers
+# review candidates, assign categories, audit photos, move good ones into players.js
+node tools/check_photos.mjs                       # confirm photo URLs resolve
 ```
 
-The cleaning rules handle the classic failure modes of automated transfer
-data: blank start dates (flagged for manual ordering), national teams
-masquerading as clubs (filtered), overlapping loan spells (flagged), and
-youth teams (excluded).
+The cleaning rules handle the classic failure modes of automated transfer data:
+blank start dates (flagged), national teams masquerading as clubs (filtered),
+overlapping loan spells (flagged), and youth teams (excluded).
 
 ## Credits
 
-- Transfer data: [Wikidata](https://www.wikidata.org) (CC0) and
-  [Wikipedia](https://en.wikipedia.org)
-- Photos: [Wikimedia Commons](https://commons.wikimedia.org) (freely licensed;
-  see each file's page for author/license)
-- Name: that song you now have stuck in your head. Sorry.
+- Transfer data: [Wikidata](https://www.wikidata.org) (CC0), [Wikipedia](https://en.wikipedia.org)
+- Photos: [Wikimedia Commons](https://commons.wikimedia.org) (freely licensed; see each file's page)
+- Name: that song you now can't get out of your head. Sorry.

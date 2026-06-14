@@ -1,0 +1,21 @@
+# Cotton Eyed Joe — source query (run at https://query.wikidata.org)
+#
+# Returns each player's club memberships in chronological order with dates,
+# rather than computing before/featured/after in SPARQL (too brittle given
+# uneven data). Post-processing happens in build_players.mjs.
+#
+# Fame dial: raise the sitelink threshold for fewer / bigger names.
+
+SELECT ?player ?playerLabel ?clubLabel ?start ?end ?image WHERE {
+  ?player wdt:P106 wd:Q937857 .          # occupation: association football player
+  ?player p:P54 ?membership .            # member of sports team
+  ?membership ps:P54 ?club .
+  OPTIONAL { ?membership pq:P580 ?start. }
+  OPTIONAL { ?membership pq:P582 ?end. }
+  OPTIONAL { ?player wdt:P18 ?image. }
+  ?player wikibase:sitelinks ?links .
+  FILTER(?links > 60)                    # fame dial
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+ORDER BY ?playerLabel ?start
+LIMIT 2000

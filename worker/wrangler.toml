@@ -1,0 +1,9 @@
+name = "cottoneyedjoe-leaderboard"
+main = "worker.js"
+compatibility_date = "2024-11-01"
+
+# After running `wrangler kv namespace create LEADERBOARD`, paste the printed
+# id below (replace REPLACE_WITH_KV_ID). Then `wrangler deploy`.
+[[kv_namespaces]]
+binding = "LEADERBOARD"
+id = "REPLACE_WITH_KV_ID"
