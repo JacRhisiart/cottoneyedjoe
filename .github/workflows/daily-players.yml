@@ -1,0 +1,49 @@
+name: Add daily players
+
+# Grows players.js once a day by pulling new footballers from Wikidata,
+# building their from/featured/to chain, sorting them into a practice category,
+# and committing the result to main (which redeploys the site).
+#
+# Entries are UNVERIFIED automated data — see tools/daily_add.mjs.
+
+on:
+  schedule:
+    - cron: "0 5 * * *"   # 05:00 UTC daily
+  workflow_dispatch: {}    # allow manual runs from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-players
+  cancel-in-progress: false
+
+jobs:
+  add-players:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Sanity-check the generator logic
+        run: node tools/daily_add.test.mjs
+
+      - name: Draw and append new players
+        run: node tools/daily_add.mjs
+
+      - name: Commit if players.js changed
+        run: |
+          if [[ -n "$(git status --porcelain players.js)" ]]; then
+            git config user.name "cotton-eyed-joe-bot"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add players.js
+            git commit -m "Daily: add new players ($(date -u +%Y-%m-%d))
+
+            Auto-generated from Wikidata. Unverified — see tools/daily_add.mjs."
+            git push
+          else
+            echo "No new players to add today."
+          fi

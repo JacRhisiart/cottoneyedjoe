@@ -122,7 +122,24 @@ somewhere with access to `commons.wikimedia.org`).
 - Sources: Wikidata (CC0), Wikipedia / Wikimedia Commons. No Transfermarkt or
   other reuse-restricted sources. The trickiest chains were re-verified online.
 
-### Extending toward 100+ players
+### Automatic daily growth (GitHub Action)
+
+`.github/workflows/daily-players.yml` runs `tools/daily_add.mjs` once a day. It
+pulls footballers from Wikidata, builds each one's from/featured/to chain with
+the cleaning rules below, sorts them into a practice category by the featured
+club's league, and commits ~10 new players to `players.js` (which redeploys the
+site). New players automatically join both the daily challenge and practice.
+
+**These entries are unverified automated data** — they carry an `auto-added`
+comment and `photoNeutral: false`, and use the Wikipedia photo fallback. Bad
+chains (loans/odd categories) can slip through; the script skips players it
+can't build a clean 3-club, non-overlapping, dated chain for, but it does not
+guarantee correctness. Edit or delete any that look wrong. To pause it, disable
+the workflow in the repo's **Actions** tab.
+
+The pure logic is unit-tested: `node tools/daily_add.test.mjs`.
+
+### Extending toward 100+ players (manual, verified)
 
 `tools/` contains the one-time offline pipeline (needs `query.wikidata.org`):
 
