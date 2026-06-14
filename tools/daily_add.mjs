@@ -137,6 +137,7 @@ export function serializeEntry(p, dateStr) {
   s += `    photoUrl: null,\n`;
   s += `    photoNeutral: false,\n`;
   s += `    wiki: ${js(p.wiki)}, // photo resolved at runtime from Wikipedia\n`;
+  if (p.daily) s += `    daily: ${js(p.daily)}, // featured as the daily challenge on this date\n`;
   s += `    altSpellings: { fromClub: [], toClub: [] },\n`;
   s += `    // auto-added ${dateStr} from Wikidata (unverified)\n`;
   s += "  },\n";
@@ -184,6 +185,13 @@ async function main() {
   const dateStr = new Date().toISOString().slice(0, 10);
   const src = readFileSync(PLAYERS_FILE, "utf8");
   const PLAYERS = new Function(src + "; return PLAYERS;")();
+
+  // One batch per day: today's batch IS today's daily challenge.
+  if (PLAYERS.some((p) => p.daily === dateStr)) {
+    console.log(`Today's daily (${dateStr}) is already prepared - no changes.`);
+    return;
+  }
+
   const existingNames = new Set(PLAYERS.map((p) => norm(p.name)));
   const existingIds = new Set(PLAYERS.map((p) => p.id));
 
@@ -196,9 +204,10 @@ async function main() {
   const used = new Set(existingIds);
   candidates = candidates.filter((c) => { if (!c.id || used.has(c.id)) return false; used.add(c.id); return true; });
 
-  // deterministic daily pick
+  // deterministic daily pick; tag them as THIS day's daily challenge
   const picked = seededShuffle(candidates, mulberry32(hashSeed("cotton-add:" + dateStr))).slice(0, ADD_PER_RUN);
   if (picked.length === 0) { console.log("No new valid players found - no changes."); return; }
+  picked.forEach((p) => { p.daily = dateStr; });
 
   const next = appendToSource(src, picked, dateStr);
   // safety: must parse and grow by exactly picked.length

@@ -17,9 +17,11 @@ Wikipedia for a handful of player photos, and your leaderboard Worker.
 
 ## Features
 
-- **Daily Challenge** — 10 footballers and a rotating **daily category**, the
-  same for everyone, regenerated every day (seeded by the UTC date). One scored
-  attempt per day; re-opening it shows your result.
+- **Daily Challenge** — the **10 brand-new players** added that day (see the
+  auto-grow Action below) *are* the day's challenge, the same for everyone. They
+  drop into the practice categories the following day. One scored attempt per
+  day; re-opening shows your result. (Before the Action has run for a given day,
+  the daily falls back to a rotating-category selection from the existing pool.)
 - **Practice by category** — unscored rounds for any of the six categories or a
   Mix / Random pool.
 - **Progress memory** — the game remembers, per device, which players you've
@@ -124,11 +126,13 @@ somewhere with access to `commons.wikimedia.org`).
 
 ### Automatic daily growth (GitHub Action)
 
-`.github/workflows/daily-players.yml` runs `tools/daily_add.mjs` once a day. It
-pulls footballers from Wikidata, builds each one's from/featured/to chain with
-the cleaning rules below, sorts them into a practice category by the featured
-club's league, and commits ~10 new players to `players.js` (which redeploys the
-site). New players automatically join both the daily challenge and practice.
+`.github/workflows/daily-players.yml` runs `tools/daily_add.mjs` once a day
+(00:15 UTC). It pulls footballers from Wikidata, builds each one's
+from/featured/to chain with the cleaning rules below, sorts each into a practice
+category by the featured club's league, and commits ~10 new players to
+`players.js` (which redeploys the site). Those 10 are tagged with the date and
+become **that day's daily challenge**; from the next day they join the practice
+categories. Runs are idempotent — one batch per day.
 
 **These entries are unverified automated data** — they carry an `auto-added`
 comment and `photoNeutral: false`, and use the Wikipedia photo fallback. Bad

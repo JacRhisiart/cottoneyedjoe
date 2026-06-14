@@ -55,4 +55,9 @@ ok(arr.length === 2, "appendToSource adds one entry and stays parseable");
 ok(arr[1].id === "test-player", "appended entry has correct id");
 ok(serializeEntry(c, "2026-06-15").includes("auto-added 2026-06-15"), "entry carries auto-added flag");
 
+// daily tag is serialized when present
+const tagged = { ...c, daily: "2026-06-15" };
+ok(serializeEntry(tagged, "2026-06-15").includes('daily: "2026-06-15"'), "daily tag is serialized");
+ok(!serializeEntry(c, "2026-06-15").includes("daily:"), "no daily line when untagged");
+
 console.log(`\nDAILY-ADD TESTS OK — ${pass} checks passed`);

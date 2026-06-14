@@ -140,12 +140,33 @@
     return CATEGORIES[dayNumber(key) % CATEGORIES.length];
   }
 
+  // Players the daily GitHub Action added AS a given day's challenge (tagged
+  // with `daily: "<date>"`). These are the daily that day, and join practice
+  // the following day.
+  function freshFor(key) { return PLAYERS.filter((p) => p.daily === key); }
+
+  // Pool available for practice on a given day: everything except that day's
+  // fresh daily set.
+  function practicePool(key) { return PLAYERS.filter((p) => p.daily !== key); }
+
   function dailySet(key) {
-    const cat = dailyCategory(key);
-    let pool = PLAYERS.filter((p) => p.category === cat);
-    if (pool.length < ROUND_SIZE) pool = PLAYERS.slice();
+    const fresh = freshFor(key);
     const rng = mulberry32(hashSeed("cotton:" + key));
+    if (fresh.length >= ROUND_SIZE) return fresh.slice(0, ROUND_SIZE);
+    if (fresh.length > 0) {
+      // Action added fewer than 10 — top up deterministically from the pool.
+      return fresh.concat(seededShuffle(practicePool(key), rng).slice(0, ROUND_SIZE - fresh.length));
+    }
+    // No fresh set yet (Action hasn't run for this day) — rotating-category fallback.
+    const cat = dailyCategory(key);
+    let pool = practicePool(key).filter((p) => p.category === cat);
+    if (pool.length < ROUND_SIZE) pool = practicePool(key);
     return seededShuffle(pool, rng).slice(0, ROUND_SIZE);
+  }
+
+  // Heading shown for the day's challenge.
+  function dailyLabel(key) {
+    return freshFor(key).length > 0 ? "Today's new players" : dailyCategory(key);
   }
 
   // ---------- state ----------
@@ -245,12 +266,12 @@
 
   function renderMenu() {
     const today = dayKey();
-    const cat = dailyCategory(today);
+    const isFresh = freshFor(today).length > 0;
     // Show today's date so it's clear the challenge is dated and rotates daily.
     const dateLabel = new Date().toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short", timeZone: "UTC" });
     els.dailyKicker.textContent = `Daily Challenge · ${dateLabel}`;
     updateDailyCountdown();
-    els.dailyCat.textContent = cat;
+    els.dailyCat.textContent = dailyLabel(today);
     const d = store.daily[today];
     if (d && d.done) {
       els.dailyStatus.textContent = `✓ Done — ${d.score}/${d.total}`;
@@ -259,7 +280,9 @@
     } else {
       els.dailyStatus.textContent = "Play";
       els.dailyStatus.classList.remove("done");
-      els.dailySub.textContent = "10 footballers · new every day · scored";
+      els.dailySub.textContent = isFresh
+        ? "10 brand-new players · scored"
+        : "10 footballers · new every day · scored";
     }
 
     // overall stats pills
@@ -292,8 +315,10 @@
       btn.addEventListener("click", () => startRound(isMix ? "mix" : "category", label));
       els.categoryList.appendChild(btn);
     };
-    for (const c of CATEGORIES) makeCard(c, PLAYERS.filter((p) => p.category === c).length, false);
-    makeCard(MIX_CATEGORY, PLAYERS.length, true);
+    // Counts exclude today's fresh daily set (it joins practice tomorrow).
+    const base = practicePool(today);
+    for (const c of CATEGORIES) makeCard(c, base.filter((p) => p.category === c).length, false);
+    makeCard(MIX_CATEGORY, base.length, true);
   }
 
   // ---------- round flow ----------
@@ -314,7 +339,7 @@
     state.mode = "daily";
     state.scored = true;
     state.dayKey = today;
-    state.category = dailyCategory(today);
+    state.category = dailyLabel(today);
     state.queue = dailySet(today);
     beginRound();
   }
@@ -324,7 +349,9 @@
     state.scored = false;
     state.dayKey = null;
     state.category = category;
-    const pool = mode === "mix" ? PLAYERS : PLAYERS.filter((p) => p.category === category);
+    // Exclude today's fresh daily set from practice (it joins practice tomorrow).
+    const base = practicePool(dayKey());
+    const pool = mode === "mix" ? base : base.filter((p) => p.category === category);
     state.queue = shuffle(pool).slice(0, ROUND_SIZE);
     beginRound();
   }
@@ -763,5 +790,5 @@
   setInterval(updateDailyCountdown, 30000); // keep the "resets in" line live
 
   // expose a little for the smoke test (no effect in the browser UI)
-  window.__CEJ__ = { normalize, isCorrect, isProfane, dailySet, dailyCategory, dayKey, CATEGORIES, store };
+  window.__CEJ__ = { normalize, isCorrect, isProfane, dailySet, dailyCategory, dailyLabel, freshFor, practicePool, dayKey, CATEGORIES, store };
 })();

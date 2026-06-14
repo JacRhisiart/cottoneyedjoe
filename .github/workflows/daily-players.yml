@@ -8,7 +8,7 @@ name: Add daily players
 
 on:
   schedule:
-    - cron: "0 5 * * *"   # 05:00 UTC daily
+    - cron: "15 0 * * *"  # 00:15 UTC daily — prepares that day's daily challenge
   workflow_dispatch: {}    # allow manual runs from the Actions tab
 
 permissions:
