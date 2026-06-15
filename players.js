@@ -1202,4 +1202,144 @@ const PLAYERS = [
     photoNeutral: true,
     altSpellings: { fromClub: ["Real Madrid CF"], toClub: ["PSG","Paris SG","Paris Saint Germain","Paris St-Germain","Paris St Germain"] },
   },
+  {
+    id: "leon-goretzka",
+    name: "Leon Goretzka",
+    category: "Modern Stars",
+    featuredClub: "Schalke 04",
+    fromClub: "VfL Bochum",
+    toClub: "FC Bayern Munich",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Leon Goretzka", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-15", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-15 from Wikidata (unverified)
+  },
+  {
+    id: "daniel-van-buyten",
+    name: "Daniel Van Buyten",
+    category: "Modern Stars",
+    featuredClub: "Olympique de Marseille",
+    fromClub: "Standard Liège",
+    toClub: "Manchester City F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Daniel Van Buyten", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-15", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-15 from Wikidata (unverified)
+  },
+  {
+    id: "leroy-sane",
+    name: "Leroy Sané",
+    category: "Modern Stars",
+    featuredClub: "FC Bayern Munich",
+    fromClub: "Manchester City F.C.",
+    toClub: "Galatasaray S.K.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Leroy Sané", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-15", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-15 from Wikidata (unverified)
+  },
+  {
+    id: "alisson-becker",
+    name: "Alisson Becker",
+    category: "Modern Stars",
+    featuredClub: "AS Roma",
+    fromClub: "S.C. Internacional",
+    toClub: "Liverpool F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Alisson Becker", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-15", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-15 from Wikidata (unverified)
+  },
+  {
+    id: "atsushi-yanagisawa",
+    name: "Atsushi Yanagisawa",
+    category: "Modern Stars",
+    featuredClub: "A.C.R. Messina",
+    fromClub: "U.C. Sampdoria",
+    toClub: "Kashima Antlers",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Atsushi Yanagisawa", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-15", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-15 from Wikidata (unverified)
+  },
+  {
+    id: "emile-heskey",
+    name: "Emile Heskey",
+    category: "Premier League Legends",
+    featuredClub: "Liverpool F.C.",
+    fromClub: "Leicester City F.C.",
+    toClub: "Birmingham City F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Emile Heskey", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-15", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-15 from Wikidata (unverified)
+  },
+  {
+    id: "kazuma-watanabe",
+    name: "Kazuma Watanabe",
+    category: "Modern Stars",
+    featuredClub: "Vissel Kobe",
+    fromClub: "FC Tokyo",
+    toClub: "Gamba Osaka",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Kazuma Watanabe", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-15", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-15 from Wikidata (unverified)
+  },
+  {
+    id: "darijo-srna",
+    name: "Darijo Srna",
+    category: "Premier League Legends",
+    featuredClub: "FC Shakhtar Donetsk",
+    fromClub: "HNK Hajduk Split",
+    toClub: "Cagliari Calcio",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Darijo Srna", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-15", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-15 from Wikidata (unverified)
+  },
+  {
+    id: "hideaki-kitajima",
+    name: "Hideaki Kitajima",
+    category: "Modern Stars",
+    featuredClub: "Kashiwa Reysol",
+    fromClub: "Shimizu S-Pulse",
+    toClub: "Roasso Kumamoto",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Hideaki Kitajima", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-15", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-15 from Wikidata (unverified)
+  },
+  {
+    id: "javier-mascherano",
+    name: "Javier Mascherano",
+    category: "La Liga",
+    featuredClub: "Fc Barcelona",
+    fromClub: "Liverpool F.C.",
+    toClub: "Hebei F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Javier Mascherano", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-15", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-15 from Wikidata (unverified)
+  },
 ];
