@@ -1342,4 +1342,144 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-06-15 from Wikidata (unverified)
   },
+  {
+    id: "blaise-matuidi",
+    name: "Blaise Matuidi",
+    category: "Modern Stars",
+    featuredClub: "Paris Saint-Germain FC",
+    fromClub: "AS Saint-Étienne",
+    toClub: "Juventus FC",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Blaise Matuidi", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-16", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-16 from Wikidata (unverified)
+  },
+  {
+    id: "gennaro-gattuso",
+    name: "Gennaro Gattuso",
+    category: "Modern Stars",
+    featuredClub: "AC Milan",
+    fromClub: "U.S. Salernitana 1919",
+    toClub: "FC Sion",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Gennaro Gattuso", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-16", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-16 from Wikidata (unverified)
+  },
+  {
+    id: "karl-heinz-rummenigge",
+    name: "Karl-Heinz Rummenigge",
+    category: "Modern Stars",
+    featuredClub: "Inter Milan",
+    fromClub: "FC Bayern Munich",
+    toClub: "Servette FC",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Karl-Heinz Rummenigge", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-16", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-16 from Wikidata (unverified)
+  },
+  {
+    id: "ashley-young",
+    name: "Ashley Young",
+    category: "Premier League Legends",
+    featuredClub: "Manchester United F.C.",
+    fromClub: "Aston Villa F.C.",
+    toClub: "Inter Milan",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Ashley Young", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-16", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-16 from Wikidata (unverified)
+  },
+  {
+    id: "didi",
+    name: "Didi",
+    category: "Modern Stars",
+    featuredClub: "Fluminense F.C.",
+    fromClub: "Madureira Esporte Clube",
+    toClub: "Botafogo F.R.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Didi", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-16", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-16 from Wikidata (unverified)
+  },
+  {
+    id: "gheorghe-hagi",
+    name: "Gheorghe Hagi",
+    category: "Modern Stars",
+    featuredClub: "FC Sportul Studențesc București",
+    fromClub: "SSC Farul Constanța",
+    toClub: "FCSB",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Gheorghe Hagi", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-16", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-16 from Wikidata (unverified)
+  },
+  {
+    id: "lukas-podolski",
+    name: "Lukas Podolski",
+    category: "Modern Stars",
+    featuredClub: "FC Bayern Munich",
+    fromClub: "1. FC Köln",
+    toClub: "1. FC Köln",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Lukas Podolski", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-16", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-16 from Wikidata (unverified)
+  },
+  {
+    id: "kim-yong-sik",
+    name: "Kim Yong-sik",
+    category: "Modern Stars",
+    featuredClub: "Pyongyang FC",
+    fromClub: "Gyeongseong FC",
+    toClub: "Gyeongseong FC",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Kim Yong-sik", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-16", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-16 from Wikidata (unverified)
+  },
+  {
+    id: "daigo-nishi",
+    name: "Daigo Nishi",
+    category: "Modern Stars",
+    featuredClub: "Kashima Antlers",
+    fromClub: "Albirex Niigata",
+    toClub: "Vissel Kobe",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Daigo Nishi", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-16", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-16 from Wikidata (unverified)
+  },
+  {
+    id: "denis-law",
+    name: "Denis Law",
+    category: "Premier League Legends",
+    featuredClub: "Manchester United F.C.",
+    fromClub: "Torino FC",
+    toClub: "Manchester City F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Denis Law", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-16", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-16 from Wikidata (unverified)
+  },
 ];
