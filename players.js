@@ -1482,4 +1482,144 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-06-16 from Wikidata (unverified)
   },
+  {
+    id: "alexia-putellas",
+    name: "Alexia Putellas",
+    category: "Modern Stars",
+    featuredClub: "Levante UD Women",
+    fromClub: "RCD Espanyol Femenino",
+    toClub: "FC Barcelona Femení",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Alexia Putellas", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-17", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-17 from Wikidata (unverified)
+  },
+  {
+    id: "alex-oxlade-chamberlain",
+    name: "Alex Oxlade-Chamberlain",
+    category: "Premier League Legends",
+    featuredClub: "Arsenal F.C.",
+    fromClub: "Southampton F.C.",
+    toClub: "Liverpool F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Alex Oxlade-Chamberlain", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-17", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-17 from Wikidata (unverified)
+  },
+  {
+    id: "dino-zoff",
+    name: "Dino Zoff",
+    category: "Modern Stars",
+    featuredClub: "SSC Napoli",
+    fromClub: "Mantova 1911",
+    toClub: "Juventus FC",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Dino Zoff", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-17", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-17 from Wikidata (unverified)
+  },
+  {
+    id: "johan-neeskens",
+    name: "Johan Neeskens",
+    category: "La Liga",
+    featuredClub: "Fc Barcelona",
+    fromClub: "AFC Ajax",
+    toClub: "New York Cosmos",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Johan Neeskens", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-17", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-17 from Wikidata (unverified)
+  },
+  {
+    id: "atsuto-uchida",
+    name: "Atsuto Uchida",
+    category: "Modern Stars",
+    featuredClub: "Schalke 04",
+    fromClub: "Kashima Antlers",
+    toClub: "1. FC Union Berlin",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Atsuto Uchida", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-17", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-17 from Wikidata (unverified)
+  },
+  {
+    id: "marcelo-bielsa",
+    name: "Marcelo Bielsa",
+    category: "La Liga",
+    featuredClub: "Club Sport Emelec",
+    fromClub: "Newell's Old Boys",
+    toClub: "Argentino de Rosario",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Marcelo Bielsa", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-17", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-17 from Wikidata (unverified)
+  },
+  {
+    id: "lucas-biglia",
+    name: "Lucas Biglia",
+    category: "Modern Stars",
+    featuredClub: "R.S.C. Anderlecht",
+    fromClub: "Club Atlético Independiente",
+    toClub: "SS Lazio",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Lucas Biglia", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-17", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-17 from Wikidata (unverified)
+  },
+  {
+    id: "gojko-kacar",
+    name: "Gojko Kačar",
+    category: "Modern Stars",
+    featuredClub: "Hamburger SV",
+    fromClub: "Hertha BSC",
+    toClub: "Cerezo Osaka",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Gojko Kačar", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-17", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-17 from Wikidata (unverified)
+  },
+  {
+    id: "kai-havertz",
+    name: "Kai Havertz",
+    category: "Premier League Legends",
+    featuredClub: "Chelsea F.C.",
+    fromClub: "Bayer 04 Leverkusen",
+    toClub: "Arsenal F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Kai Havertz", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-17", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-17 from Wikidata (unverified)
+  },
+  {
+    id: "giuseppe-meazza",
+    name: "Giuseppe Meazza",
+    category: "Modern Stars",
+    featuredClub: "AC Milan",
+    fromClub: "Inter Milan",
+    toClub: "Juventus FC",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Giuseppe Meazza", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-17", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-17 from Wikidata (unverified)
+  },
 ];
