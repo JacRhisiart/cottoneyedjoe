@@ -1622,4 +1622,144 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-06-17 from Wikidata (unverified)
   },
+  {
+    id: "hiroki-yamada",
+    name: "Hiroki Yamada",
+    category: "Modern Stars",
+    featuredClub: "Karlsruher SC",
+    fromClub: "Júbilo Iwata",
+    toClub: "Júbilo Iwata",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Hiroki Yamada", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-19", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-19 from Wikidata (unverified)
+  },
+  {
+    id: "daisuke-oku",
+    name: "Daisuke Oku",
+    category: "Modern Stars",
+    featuredClub: "Yokohama F. Marinos",
+    fromClub: "Júbilo Iwata",
+    toClub: "Yokohama FC",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Daisuke Oku", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-19", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-19 from Wikidata (unverified)
+  },
+  {
+    id: "david-luiz",
+    name: "David Luiz",
+    category: "Modern Stars",
+    featuredClub: "S.L. Benfica",
+    fromClub: "E.C. Vitória",
+    toClub: "Chelsea F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "David Luiz", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-19", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-19 from Wikidata (unverified)
+  },
+  {
+    id: "david-seaman",
+    name: "David Seaman",
+    category: "Premier League Legends",
+    featuredClub: "Arsenal F.C.",
+    fromClub: "Queens Park Rangers F.C.",
+    toClub: "Manchester City F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "David Seaman", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-19", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-19 from Wikidata (unverified)
+  },
+  {
+    id: "fabian-schar",
+    name: "Fabian Schär",
+    category: "Modern Stars",
+    featuredClub: "FC Basel",
+    fromClub: "FC Wil 1900",
+    toClub: "TSG 1899 Hoffenheim",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Fabian Schär", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-19", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-19 from Wikidata (unverified)
+  },
+  {
+    id: "claudio-bravo",
+    name: "Claudio Bravo",
+    category: "La Liga",
+    featuredClub: "Real Sociedad",
+    fromClub: "Club Social y Deportivo Colo Colo",
+    toClub: "Fc Barcelona",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Claudio Bravo", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-19", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-19 from Wikidata (unverified)
+  },
+  {
+    id: "arthur-antunes-coimbra",
+    name: "Arthur Antunes Coimbra",
+    category: "Modern Stars",
+    featuredClub: "Clube de Regatas do Flamengo",
+    fromClub: "Udinese Calcio",
+    toClub: "Kashima Antlers",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Arthur Antunes Coimbra", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-19", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-19 from Wikidata (unverified)
+  },
+  {
+    id: "jose-mourinho",
+    name: "José Mourinho",
+    category: "Modern Stars",
+    featuredClub: "G.D. Sesimbra",
+    fromClub: "C.F. Os Belenenses",
+    toClub: "Comércio e Indústria",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "José Mourinho", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-19", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-19 from Wikidata (unverified)
+  },
+  {
+    id: "claude-makelele",
+    name: "Claude Makelélé",
+    category: "Modern Stars",
+    featuredClub: "FC Nantes",
+    fromClub: "Stade Brestois 29",
+    toClub: "Olympique de Marseille",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Claude Makelélé", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-19", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-19 from Wikidata (unverified)
+  },
+  {
+    id: "guido-buchwald",
+    name: "Guido Buchwald",
+    category: "Modern Stars",
+    featuredClub: "VfB Stuttgart",
+    fromClub: "Stuttgarter Kickers",
+    toClub: "Urawa Red Diamonds",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Guido Buchwald", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-19", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-19 from Wikidata (unverified)
+  },
 ];
