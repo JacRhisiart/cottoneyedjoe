@@ -1902,4 +1902,144 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-06-20 from Wikidata (unverified)
   },
+  {
+    id: "jens-lehmann",
+    name: "Jens Lehmann",
+    category: "Premier League Legends",
+    featuredClub: "Arsenal F.C.",
+    fromClub: "Borussia Dortmund",
+    toClub: "VfB Stuttgart",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Jens Lehmann", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-22", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-22 from Wikidata (unverified)
+  },
+  {
+    id: "konstantin-zyryanov",
+    name: "Konstantin Zyryanov",
+    category: "Premier League Legends",
+    featuredClub: "FC Zenit Saint Petersburg",
+    fromClub: "FC Torpedo Moscow",
+    toClub: "FC Zenit-2",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Konstantin Zyryanov", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-22", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-22 from Wikidata (unverified)
+  },
+  {
+    id: "aaron-lennon",
+    name: "Aaron Lennon",
+    category: "Premier League Legends",
+    featuredClub: "Tottenham Hotspur F.C.",
+    fromClub: "Leeds United F.C.",
+    toClub: "Everton F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Aaron Lennon", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-22", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-22 from Wikidata (unverified)
+  },
+  {
+    id: "joao-moutinh0",
+    name: "João Moutinh0",
+    category: "Modern Stars",
+    featuredClub: "Sporting CP",
+    fromClub: "Sporting CP B",
+    toClub: "FC Porto",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "João Moutinh0", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-22", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-22 from Wikidata (unverified)
+  },
+  {
+    id: "hakan-calhanoglu",
+    name: "Hakan Çalhanoğlu",
+    category: "Modern Stars",
+    featuredClub: "AC Milan",
+    fromClub: "Bayer 04 Leverkusen",
+    toClub: "Inter Milan",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Hakan Çalhanoğlu", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-22", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-22 from Wikidata (unverified)
+  },
+  {
+    id: "maarten-stekelenburg",
+    name: "Maarten Stekelenburg",
+    category: "Premier League Legends",
+    featuredClub: "Everton F.C.",
+    fromClub: "Southampton F.C.",
+    toClub: "AFC Ajax",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Maarten Stekelenburg", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-22", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-22 from Wikidata (unverified)
+  },
+  {
+    id: "fernandinho",
+    name: "Fernandinho",
+    category: "Premier League Legends",
+    featuredClub: "Manchester City F.C.",
+    fromClub: "FC Shakhtar Donetsk",
+    toClub: "Club Athletico Paranaense",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Fernandinho", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-22", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-22 from Wikidata (unverified)
+  },
+  {
+    id: "gary-medel",
+    name: "Gary Medel",
+    category: "Modern Stars",
+    featuredClub: "Bologna F.C. 1909",
+    fromClub: "Beşiktaş J.K. (Football)",
+    toClub: "CR Vasco da Gama",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Gary Medel", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-22", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-22 from Wikidata (unverified)
+  },
+  {
+    id: "go-oiwa",
+    name: "Go Oiwa",
+    category: "Modern Stars",
+    featuredClub: "Júbilo Iwata",
+    fromClub: "Nagoya Grampus",
+    toClub: "Kashima Antlers",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Go Oiwa", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-22", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-22 from Wikidata (unverified)
+  },
+  {
+    id: "esteban-cambiasso",
+    name: "Esteban Cambiasso",
+    category: "Modern Stars",
+    featuredClub: "Inter Milan",
+    fromClub: "Real Madrid Club de Fútbol",
+    toClub: "Leicester City F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Esteban Cambiasso", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-22", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-22 from Wikidata (unverified)
+  },
 ];
