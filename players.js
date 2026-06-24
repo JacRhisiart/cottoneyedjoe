@@ -2042,4 +2042,144 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-06-22 from Wikidata (unverified)
   },
+  {
+    id: "diego-simeone",
+    name: "Diego Simeone",
+    category: "Modern Stars",
+    featuredClub: "SS Lazio",
+    fromClub: "Inter Milan",
+    toClub: "Atlético Madrid",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Diego Simeone", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-24", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-24 from Wikidata (unverified)
+  },
+  {
+    id: "eric-abidal",
+    name: "Eric Abidal",
+    category: "La Liga",
+    featuredClub: "Fc Barcelona",
+    fromClub: "Olympique Lyonnais",
+    toClub: "AS Monaco FC",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Eric Abidal", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-24", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-24 from Wikidata (unverified)
+  },
+  {
+    id: "jorge-valdano",
+    name: "Jorge Valdano",
+    category: "Modern Stars",
+    featuredClub: "Real Zaragoza",
+    fromClub: "Deportivo Alavés",
+    toClub: "Real Madrid Club de Fútbol",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Jorge Valdano", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-24", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-24 from Wikidata (unverified)
+  },
+  {
+    id: "jorginho",
+    name: "Jorginho",
+    category: "Modern Stars",
+    featuredClub: "Clube de Regatas do Flamengo",
+    fromClub: "America Football Club",
+    toClub: "Bayer 04 Leverkusen",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Jorginho", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-24", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-24 from Wikidata (unverified)
+  },
+  {
+    id: "hiroki-sakai",
+    name: "Hiroki Sakai",
+    category: "Modern Stars",
+    featuredClub: "Olympique de Marseille",
+    fromClub: "Hannover 96",
+    toClub: "Urawa Red Diamonds",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Hiroki Sakai", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-24", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-24 from Wikidata (unverified)
+  },
+  {
+    id: "dragan-stojkovic",
+    name: "Dragan Stojković",
+    category: "Modern Stars",
+    featuredClub: "FK Crvena zvezda",
+    fromClub: "FK Radnički Niš",
+    toClub: "Olympique de Marseille",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Dragan Stojković", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-24", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-24 from Wikidata (unverified)
+  },
+  {
+    id: "lucas-moura",
+    name: "Lucas Moura",
+    category: "Modern Stars",
+    featuredClub: "Paris Saint-Germain FC",
+    fromClub: "São Paulo FC",
+    toClub: "Tottenham Hotspur F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Lucas Moura", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-24", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-24 from Wikidata (unverified)
+  },
+  {
+    id: "gianluca-zambrotta",
+    name: "Gianluca Zambrotta",
+    category: "Modern Stars",
+    featuredClub: "Juventus FC",
+    fromClub: "SSC Bari",
+    toClub: "Fc Barcelona",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Gianluca Zambrotta", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-24", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-24 from Wikidata (unverified)
+  },
+  {
+    id: "hugo-lloris",
+    name: "Hugo Lloris",
+    category: "Premier League Legends",
+    featuredClub: "Tottenham Hotspur F.C.",
+    fromClub: "Olympique Lyonnais",
+    toClub: "Los Angeles FC",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Hugo Lloris", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-24", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-24 from Wikidata (unverified)
+  },
+  {
+    id: "fabio-capello",
+    name: "Fabio Capello",
+    category: "Modern Stars",
+    featuredClub: "Juventus FC",
+    fromClub: "AS Roma",
+    toClub: "AC Milan",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Fabio Capello", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-24", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-24 from Wikidata (unverified)
+  },
 ];
