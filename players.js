@@ -2182,4 +2182,144 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-06-24 from Wikidata (unverified)
   },
+  {
+    id: "just-fontaine",
+    name: "Just Fontaine",
+    category: "Modern Stars",
+    featuredClub: "OGC Nice",
+    fromClub: "US Marocaine Casablanca",
+    toClub: "Stade de Reims",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Just Fontaine", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-26", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-26 from Wikidata (unverified)
+  },
+  {
+    id: "frank-de-boer",
+    name: "Frank de Boer",
+    category: "La Liga",
+    featuredClub: "Fc Barcelona",
+    fromClub: "AFC Ajax",
+    toClub: "Galatasaray S.K.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Frank de Boer", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-26", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-26 from Wikidata (unverified)
+  },
+  {
+    id: "dani-olmo",
+    name: "Dani Olmo",
+    category: "La Liga",
+    featuredClub: "Fc Barcelona",
+    fromClub: "RCD Espanyol de Barcelona",
+    toClub: "GNK Dinamo Zagreb",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Dani Olmo", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-26", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-26 from Wikidata (unverified)
+  },
+  {
+    id: "george-weah",
+    name: "George Weah",
+    category: "Modern Stars",
+    featuredClub: "AC Milan",
+    fromClub: "Paris Saint-Germain FC",
+    toClub: "Chelsea F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "George Weah", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-26", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-26 from Wikidata (unverified)
+  },
+  {
+    id: "daisuke-ichikawa",
+    name: "Daisuke Ichikawa",
+    category: "Modern Stars",
+    featuredClub: "Fujieda MYFC",
+    fromClub: "Mito HollyHock",
+    toClub: "FC Imabari",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Daisuke Ichikawa", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-26", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-26 from Wikidata (unverified)
+  },
+  {
+    id: "hotaru-yamaguchi",
+    name: "Hotaru Yamaguchi",
+    category: "Modern Stars",
+    featuredClub: "Vissel Kobe",
+    fromClub: "Cerezo Osaka",
+    toClub: "V-Varen Nagasaki",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Hotaru Yamaguchi", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-26", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-26 from Wikidata (unverified)
+  },
+  {
+    id: "koji-yamase",
+    name: "Koji Yamase",
+    category: "Modern Stars",
+    featuredClub: "Yokohama F. Marinos",
+    fromClub: "Urawa Red Diamonds",
+    toClub: "Kawasaki Frontale",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Koji Yamase", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-26", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-26 from Wikidata (unverified)
+  },
+  {
+    id: "cesar-luis-menotti",
+    name: "César Luis Menotti",
+    category: "Modern Stars",
+    featuredClub: "New York Generals",
+    fromClub: "Club Atlético Rosario Central",
+    toClub: "Santos F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "César Luis Menotti", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-26", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-26 from Wikidata (unverified)
+  },
+  {
+    id: "carlo-ancelotti",
+    name: "Carlo Ancelotti",
+    category: "Modern Stars",
+    featuredClub: "AS Roma",
+    fromClub: "Parma Calcio 1913",
+    toClub: "AC Milan",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Carlo Ancelotti", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-26", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-26 from Wikidata (unverified)
+  },
+  {
+    id: "eusebio",
+    name: "Eusébio",
+    category: "Modern Stars",
+    featuredClub: "S.L. Benfica",
+    fromClub: "C.D. Maxaquene",
+    toClub: "Club de Fútbol Monterrey",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Eusébio", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-26", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-26 from Wikidata (unverified)
+  },
 ];
