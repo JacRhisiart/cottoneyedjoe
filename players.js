@@ -2462,4 +2462,144 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-06-28 from Wikidata (unverified)
   },
+  {
+    id: "jean-pierre-papin",
+    name: "Jean-Pierre Papin",
+    category: "Modern Stars",
+    featuredClub: "Olympique de Marseille",
+    fromClub: "Club Brugge K.V.",
+    toClub: "AC Milan",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Jean-Pierre Papin", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-29", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-29 from Wikidata (unverified)
+  },
+  {
+    id: "dani-carvajal",
+    name: "Dani Carvajal",
+    category: "Modern Stars",
+    featuredClub: "Bayer 04 Leverkusen",
+    fromClub: "Real Madrid Castilla",
+    toClub: "Real Madrid Club de Fútbol",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Dani Carvajal", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-29", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-29 from Wikidata (unverified)
+  },
+  {
+    id: "daiki-iwamasa",
+    name: "Daiki Iwamasa",
+    category: "Modern Stars",
+    featuredClub: "Fagiano Okayama",
+    fromClub: "Police Tebrau F.C.",
+    toClub: "Tokyo United FC",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Daiki Iwamasa", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-29", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-29 from Wikidata (unverified)
+  },
+  {
+    id: "gianluigi-donnarumma",
+    name: "Gianluigi Donnarumma",
+    category: "Modern Stars",
+    featuredClub: "Paris Saint-Germain FC",
+    fromClub: "AC Milan",
+    toClub: "Manchester City F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Gianluigi Donnarumma", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-29", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-29 from Wikidata (unverified)
+  },
+  {
+    id: "daisuke-suzuki",
+    name: "Daisuke Suzuki",
+    category: "Modern Stars",
+    featuredClub: "Gimnàstic de Tarragona",
+    fromClub: "Kashiwa Reysol",
+    toClub: "Kashiwa Reysol",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Daisuke Suzuki", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-29", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-29 from Wikidata (unverified)
+  },
+  {
+    id: "javier-pastore",
+    name: "Javier Pastore",
+    category: "Modern Stars",
+    featuredClub: "Paris Saint-Germain FC",
+    fromClub: "Palermo F.C.",
+    toClub: "AS Roma",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Javier Pastore", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-29", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-29 from Wikidata (unverified)
+  },
+  {
+    id: "lucas-digne",
+    name: "Lucas Digne",
+    category: "Premier League Legends",
+    featuredClub: "Everton F.C.",
+    fromClub: "FC Barcelona",
+    toClub: "Aston Villa F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Lucas Digne", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-29", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-29 from Wikidata (unverified)
+  },
+  {
+    id: "david-de-gea",
+    name: "David de Gea",
+    category: "Premier League Legends",
+    featuredClub: "Manchester United F.C.",
+    fromClub: "Atlético Madrid",
+    toClub: "ACF Fiorentina",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "David de Gea", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-29", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-29 from Wikidata (unverified)
+  },
+  {
+    id: "bastian-schweinsteiger",
+    name: "Bastian Schweinsteiger",
+    category: "Premier League Legends",
+    featuredClub: "Manchester United F.C.",
+    fromClub: "FC Bayern Munich",
+    toClub: "Chicago Fire FC",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Bastian Schweinsteiger", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-29", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-29 from Wikidata (unverified)
+  },
+  {
+    id: "marcus-rashford",
+    name: "Marcus Rashford",
+    category: "Premier League Legends",
+    featuredClub: "Aston Villa F.C.",
+    fromClub: "Manchester United F.C.",
+    toClub: "FC Barcelona",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Marcus Rashford", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-29", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-29 from Wikidata (unverified)
+  },
 ];
