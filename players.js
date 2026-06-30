@@ -2602,4 +2602,144 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-06-29 from Wikidata (unverified)
   },
+  {
+    id: "gianluca-vialli",
+    name: "Gianluca Vialli",
+    category: "Modern Stars",
+    featuredClub: "U.C. Sampdoria",
+    fromClub: "US Cremonese",
+    toClub: "Juventus FC",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Gianluca Vialli", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-30", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-30 from Wikidata (unverified)
+  },
+  {
+    id: "danijel-subasic",
+    name: "Danijel Subašić",
+    category: "Modern Stars",
+    featuredClub: "AS Monaco FC",
+    fromClub: "HNK Hajduk Split",
+    toClub: "HNK Hajduk Split",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Danijel Subašić", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-30", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-30 from Wikidata (unverified)
+  },
+  {
+    id: "keiji-tamada",
+    name: "Keiji Tamada",
+    category: "Modern Stars",
+    featuredClub: "Nagoya Grampus",
+    fromClub: "Kashiwa Reysol",
+    toClub: "Cerezo Osaka",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Keiji Tamada", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-30", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-30 from Wikidata (unverified)
+  },
+  {
+    id: "garrincha",
+    name: "Garrincha",
+    category: "Modern Stars",
+    featuredClub: "Clube de Regatas do Flamengo",
+    fromClub: "CR Vasco da Gama",
+    toClub: "Olaria Atlético Clube",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Garrincha", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-30", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-30 from Wikidata (unverified)
+  },
+  {
+    id: "koki-mizuno",
+    name: "Koki Mizuno",
+    category: "Modern Stars",
+    featuredClub: "Celtic F.C.",
+    fromClub: "JEF United Chiba",
+    toClub: "Kashiwa Reysol",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Koki Mizuno", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-30", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-30 from Wikidata (unverified)
+  },
+  {
+    id: "marcus-tulio-tanaka",
+    name: "Marcus Tulio Tanaka",
+    category: "Modern Stars",
+    featuredClub: "Urawa Red Diamonds",
+    fromClub: "Mito HollyHock",
+    toClub: "Nagoya Grampus",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Marcus Tulio Tanaka", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-30", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-30 from Wikidata (unverified)
+  },
+  {
+    id: "jungo-fujimoto",
+    name: "Jungo Fujimoto",
+    category: "Modern Stars",
+    featuredClub: "Nagoya Grampus",
+    fromClub: "Shimizu S-Pulse",
+    toClub: "Yokohama F. Marinos",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Jungo Fujimoto", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-30", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-30 from Wikidata (unverified)
+  },
+  {
+    id: "gael-clichy",
+    name: "Gaël Clichy",
+    category: "Premier League Legends",
+    featuredClub: "Arsenal F.C.",
+    fromClub: "AS Cannes",
+    toClub: "Manchester City F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Gaël Clichy", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-30", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-30 from Wikidata (unverified)
+  },
+  {
+    id: "alessandro-del-piero",
+    name: "Alessandro Del Piero",
+    category: "Modern Stars",
+    featuredClub: "Juventus FC",
+    fromClub: "Calcio Padova",
+    toClub: "Sydney FC",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Alessandro Del Piero", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-30", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-30 from Wikidata (unverified)
+  },
+  {
+    id: "laurent-koscielny",
+    name: "Laurent Koscielny",
+    category: "Premier League Legends",
+    featuredClub: "Arsenal F.C.",
+    fromClub: "F.C. Lorient",
+    toClub: "FC Girondins de Bordeaux",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Laurent Koscielny", // photo resolved at runtime from Wikipedia
+    daily: "2026-06-30", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-06-30 from Wikidata (unverified)
+  },
 ];
