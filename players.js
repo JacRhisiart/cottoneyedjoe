@@ -2742,4 +2742,144 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-06-30 from Wikidata (unverified)
   },
+  {
+    id: "junya-tanaka",
+    name: "Junya Tanaka",
+    category: "Modern Stars",
+    featuredClub: "Vissel Kobe",
+    fromClub: "Kashiwa Reysol",
+    toClub: "FC Gifu",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Junya Tanaka", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-01", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-01 from Wikidata (unverified)
+  },
+  {
+    id: "christian-eriksen",
+    name: "Christian Eriksen",
+    category: "Premier League Legends",
+    featuredClub: "Tottenham Hotspur F.C.",
+    fromClub: "AFC Ajax",
+    toClub: "Inter Milan",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Christian Eriksen", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-01", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-01 from Wikidata (unverified)
+  },
+  {
+    id: "brahim-diaz",
+    name: "Brahim Díaz",
+    category: "La Liga",
+    featuredClub: "Real Madrid Club de Fútbol",
+    fromClub: "Manchester City F.C.",
+    toClub: "AC Milan",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Brahim Díaz", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-01", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-01 from Wikidata (unverified)
+  },
+  {
+    id: "domagoj-vida",
+    name: "Domagoj Vida",
+    category: "Premier League Legends",
+    featuredClub: "FC Dynamo Kyiv",
+    fromClub: "GNK Dinamo Zagreb",
+    toClub: "Beşiktaş J.K. (Football)",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Domagoj Vida", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-01", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-01 from Wikidata (unverified)
+  },
+  {
+    id: "koji-nakata",
+    name: "Koji Nakata",
+    category: "Modern Stars",
+    featuredClub: "FC Basel",
+    fromClub: "Olympique de Marseille",
+    toClub: "Kashima Antlers",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Koji Nakata", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-01", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-01 from Wikidata (unverified)
+  },
+  {
+    id: "marco-verratti",
+    name: "Marco Verratti",
+    category: "Modern Stars",
+    featuredClub: "Paris Saint-Germain FC",
+    fromClub: "Delfino Pescara 1936",
+    toClub: "Al-Arabi SC",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Marco Verratti", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-01", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-01 from Wikidata (unverified)
+  },
+  {
+    id: "davor-suker",
+    name: "Davor Šuker",
+    category: "La Liga",
+    featuredClub: "Sevilla FC",
+    fromClub: "GNK Dinamo Zagreb",
+    toClub: "Real Madrid Club de Fútbol",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Davor Šuker", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-01", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-01 from Wikidata (unverified)
+  },
+  {
+    id: "daisuke-sakata",
+    name: "Daisuke Sakata",
+    category: "Modern Stars",
+    featuredClub: "Aris Thessaloniki F.C.",
+    fromClub: "Yokohama F. Marinos",
+    toClub: "FC Tokyo",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Daisuke Sakata", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-01", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-01 from Wikidata (unverified)
+  },
+  {
+    id: "gabriel-jesus",
+    name: "Gabriel Jesus",
+    category: "Premier League Legends",
+    featuredClub: "Manchester City F.C.",
+    fromClub: "Sociedade Esportiva Palmeiras",
+    toClub: "Arsenal F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Gabriel Jesus", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-01", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-01 from Wikidata (unverified)
+  },
+  {
+    id: "cacau",
+    name: "Cacau",
+    category: "Modern Stars",
+    featuredClub: "VfB Stuttgart",
+    fromClub: "1. FC Nürnberg",
+    toClub: "Cerezo Osaka",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Cacau", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-01", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-01 from Wikidata (unverified)
+  },
 ];
