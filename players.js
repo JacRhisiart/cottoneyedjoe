@@ -2882,4 +2882,144 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-07-01 from Wikidata (unverified)
   },
+  {
+    id: "bryan-ruiz",
+    name: "Bryan Ruiz",
+    category: "Modern Stars",
+    featuredClub: "KAA Gent",
+    fromClub: "Liga Deportiva Alajuelense",
+    toClub: "FC Twente",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Bryan Ruiz", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-02", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-02 from Wikidata (unverified)
+  },
+  {
+    id: "cesar-azpilicueta",
+    name: "César Azpilicueta",
+    category: "Premier League Legends",
+    featuredClub: "Chelsea F.C.",
+    fromClub: "Olympique de Marseille",
+    toClub: "Atlético Madrid",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "César Azpilicueta", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-02", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-02 from Wikidata (unverified)
+  },
+  {
+    id: "joshua-kennedy",
+    name: "Joshua Kennedy",
+    category: "Modern Stars",
+    featuredClub: "Nagoya Grampus",
+    fromClub: "Karlsruher SC",
+    toClub: "Melbourne City FC",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Joshua Kennedy", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-02", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-02 from Wikidata (unverified)
+  },
+  {
+    id: "corentin-tolisso",
+    name: "Corentin Tolisso",
+    category: "Modern Stars",
+    featuredClub: "FC Bayern Munich",
+    fromClub: "Olympique Lyonnais",
+    toClub: "Olympique Lyonnais",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Corentin Tolisso", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-02", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-02 from Wikidata (unverified)
+  },
+  {
+    id: "brendan-rodgers",
+    name: "Brendan Rodgers",
+    category: "Modern Stars",
+    featuredClub: "Reading F.C.",
+    fromClub: "Ballymena United F.C.",
+    toClub: "Newport (IOW) F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Brendan Rodgers", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-02", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-02 from Wikidata (unverified)
+  },
+  {
+    id: "hisashi-kurosaki",
+    name: "Hisashi Kurosaki",
+    category: "Modern Stars",
+    featuredClub: "Kashima Antlers",
+    fromClub: "Honda FC",
+    toClub: "Kyoto Sanga FC",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Hisashi Kurosaki", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-02", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-02 from Wikidata (unverified)
+  },
+  {
+    id: "hansi-flick",
+    name: "Hansi Flick",
+    category: "Modern Stars",
+    featuredClub: "FC Bayern Munich",
+    fromClub: "SV Sandhausen",
+    toClub: "1. FC Köln",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Hansi Flick", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-02", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-02 from Wikidata (unverified)
+  },
+  {
+    id: "gerd-muller",
+    name: "Gerd Müller",
+    category: "Modern Stars",
+    featuredClub: "FC Bayern Munich",
+    fromClub: "TSV 1861 Nördlingen",
+    toClub: "Fort Lauderdale Strikers",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Gerd Müller", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-02", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-02 from Wikidata (unverified)
+  },
+  {
+    id: "benjamin-pavard",
+    name: "Benjamin Pavard",
+    category: "Modern Stars",
+    featuredClub: "FC Bayern Munich",
+    fromClub: "VfB Stuttgart",
+    toClub: "Inter Milan",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Benjamin Pavard", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-02", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-02 from Wikidata (unverified)
+  },
+  {
+    id: "akira-narahashi",
+    name: "Akira Narahashi",
+    category: "Modern Stars",
+    featuredClub: "Kashima Antlers",
+    fromClub: "Shonan Bellmare",
+    toClub: "Shonan Bellmare",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Akira Narahashi", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-02", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-02 from Wikidata (unverified)
+  },
 ];
