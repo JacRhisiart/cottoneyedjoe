@@ -3022,4 +3022,144 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-07-02 from Wikidata (unverified)
   },
+  {
+    id: "aleksandar-kolarov",
+    name: "Aleksandar Kolarov",
+    category: "Premier League Legends",
+    featuredClub: "Manchester City F.C.",
+    fromClub: "SS Lazio",
+    toClub: "AS Roma",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Aleksandar Kolarov", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-04", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-04 from Wikidata (unverified)
+  },
+  {
+    id: "aitana-bonmati",
+    name: "Aitana Bonmatí",
+    category: "La Liga",
+    featuredClub: "FC Barcelona",
+    fromClub: "CF Cubelles",
+    toClub: "FC Barcelona B",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Aitana Bonmatí", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-04", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-04 from Wikidata (unverified)
+  },
+  {
+    id: "jules-kounde",
+    name: "Jules Koundé",
+    category: "La Liga",
+    featuredClub: "Sevilla FC",
+    fromClub: "FC Girondins de Bordeaux",
+    toClub: "FC Barcelona",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Jules Koundé", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-04", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-04 from Wikidata (unverified)
+  },
+  {
+    id: "alexandre-lacazette",
+    name: "Alexandre Lacazette",
+    category: "Premier League Legends",
+    featuredClub: "Arsenal F.C.",
+    fromClub: "Olympique Lyonnais",
+    toClub: "Olympique Lyonnais",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Alexandre Lacazette", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-04", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-04 from Wikidata (unverified)
+  },
+  {
+    id: "gunnar-nordahl",
+    name: "Gunnar Nordahl",
+    category: "Modern Stars",
+    featuredClub: "AC Milan",
+    fromClub: "IFK Norrköping FK",
+    toClub: "AS Roma",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Gunnar Nordahl", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-04", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-04 from Wikidata (unverified)
+  },
+  {
+    id: "dusan-vlahovic",
+    name: "Dušan Vlahović",
+    category: "Modern Stars",
+    featuredClub: "ACF Fiorentina",
+    fromClub: "FK Partizan",
+    toClub: "Juventus FC",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Dušan Vlahović", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-04", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-04 from Wikidata (unverified)
+  },
+  {
+    id: "holger-badstuber",
+    name: "Holger Badstuber",
+    category: "Modern Stars",
+    featuredClub: "VfB Stuttgart",
+    fromClub: "Schalke 04",
+    toClub: "FC Luzern",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Holger Badstuber", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-04", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-04 from Wikidata (unverified)
+  },
+  {
+    id: "freddie-ljungberg",
+    name: "Freddie Ljungberg",
+    category: "Premier League Legends",
+    featuredClub: "Arsenal F.C.",
+    fromClub: "Halmstads BK",
+    toClub: "West Ham United F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Freddie Ljungberg", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-04", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-04 from Wikidata (unverified)
+  },
+  {
+    id: "erik-ten-hag",
+    name: "Erik ten Hag",
+    category: "Modern Stars",
+    featuredClub: "FC Twente",
+    fromClub: "De Graafschap",
+    toClub: "RKC Waalwijk",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Erik ten Hag", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-04", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-04 from Wikidata (unverified)
+  },
+  {
+    id: "juan-mata",
+    name: "Juan Mata",
+    category: "Premier League Legends",
+    featuredClub: "Manchester United F.C.",
+    fromClub: "Chelsea F.C.",
+    toClub: "Galatasaray S.K.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Juan Mata", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-04", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-04 from Wikidata (unverified)
+  },
 ];
