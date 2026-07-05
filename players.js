@@ -3162,4 +3162,144 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-07-04 from Wikidata (unverified)
   },
+  {
+    id: "javier-zanetti",
+    name: "Javier Zanetti",
+    category: "La Liga",
+    featuredClub: "Club Atlético Banfield",
+    fromClub: "Club Atlético Talleres de Remedios de Escalada",
+    toClub: "Inter Milan",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Javier Zanetti", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-05", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-05 from Wikidata (unverified)
+  },
+  {
+    id: "marcelo-vieira",
+    name: "Marcelo Vieira",
+    category: "La Liga",
+    featuredClub: "Real Madrid Club de Fútbol",
+    fromClub: "Fluminense F.C.",
+    toClub: "Olympiacos F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Marcelo Vieira", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-05", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-05 from Wikidata (unverified)
+  },
+  {
+    id: "andriy-yarmolenko",
+    name: "Andriy Yarmolenko",
+    category: "Premier League Legends",
+    featuredClub: "FC Dynamo Kyiv",
+    fromClub: "FC Dynamo-2 Kyiv",
+    toClub: "Borussia Dortmund",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Andriy Yarmolenko", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-05", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-05 from Wikidata (unverified)
+  },
+  {
+    id: "jupp-heynckes",
+    name: "Jupp Heynckes",
+    category: "Modern Stars",
+    featuredClub: "Hannover 96",
+    fromClub: "Borussia Mönchengladbach",
+    toClub: "Borussia Mönchengladbach",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Jupp Heynckes", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-05", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-05 from Wikidata (unverified)
+  },
+  {
+    id: "emre-can",
+    name: "Emre Can",
+    category: "Premier League Legends",
+    featuredClub: "Liverpool F.C.",
+    fromClub: "Bayer 04 Leverkusen",
+    toClub: "Juventus FC",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Emre Can", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-05", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-05 from Wikidata (unverified)
+  },
+  {
+    id: "daniel-passarella",
+    name: "Daniel Passarella",
+    category: "La Liga",
+    featuredClub: "Club Atlético River Plate",
+    fromClub: "Club Atlético Sarmiento",
+    toClub: "ACF Fiorentina",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Daniel Passarella", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-05", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-05 from Wikidata (unverified)
+  },
+  {
+    id: "ignazio-abate",
+    name: "Ignazio Abate",
+    category: "Modern Stars",
+    featuredClub: "SSC Napoli",
+    fromClub: "AC Milan",
+    toClub: "Piacenza Calcio",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Ignazio Abate", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-05", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-05 from Wikidata (unverified)
+  },
+  {
+    id: "ivan-strinic",
+    name: "Ivan Strinić",
+    category: "Modern Stars",
+    featuredClub: "HNK Hajduk Split",
+    fromClub: "NK Hrvatski Dragovoljac",
+    toClub: "FC Dnipro",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Ivan Strinić", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-05", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-05 from Wikidata (unverified)
+  },
+  {
+    id: "adil-rami",
+    name: "Adil Rami",
+    category: "Modern Stars",
+    featuredClub: "Lille OSC",
+    fromClub: "Étoile Fréjus Saint-Raphaël",
+    toClub: "Valencia CF",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Adil Rami", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-05", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-05 from Wikidata (unverified)
+  },
+  {
+    id: "jay-jay-okocha",
+    name: "Jay-Jay Okocha",
+    category: "Modern Stars",
+    featuredClub: "Eintracht Frankfurt",
+    fromClub: "Borussia Neunkirchen",
+    toClub: "Fenerbahçe Istanbul",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Jay-Jay Okocha", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-05", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-05 from Wikidata (unverified)
+  },
 ];
