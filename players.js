@@ -3302,4 +3302,144 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-07-05 from Wikidata (unverified)
   },
+  {
+    id: "makoto-hasebe",
+    name: "Makoto Hasebe",
+    category: "Modern Stars",
+    featuredClub: "VfL Wolfsburg",
+    fromClub: "Urawa Red Diamonds",
+    toClub: "1. FC Nürnberg",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Makoto Hasebe", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-08", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-08 from Wikidata (unverified)
+  },
+  {
+    id: "marcelo-brozovic",
+    name: "Marcelo Brozović",
+    category: "Modern Stars",
+    featuredClub: "Inter Milan",
+    fromClub: "GNK Dinamo Zagreb",
+    toClub: "Al-Nassr",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Marcelo Brozović", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-08", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-08 from Wikidata (unverified)
+  },
+  {
+    id: "filipe-luis",
+    name: "Filipe Luís",
+    category: "La Liga",
+    featuredClub: "Atlético Madrid",
+    fromClub: "Deportivo de A Coruña",
+    toClub: "Chelsea F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Filipe Luís", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-08", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-08 from Wikidata (unverified)
+  },
+  {
+    id: "laurent-blanc",
+    name: "Laurent Blanc",
+    category: "Modern Stars",
+    featuredClub: "Inter Milan",
+    fromClub: "Olympique de Marseille",
+    toClub: "Manchester United F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Laurent Blanc", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-08", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-08 from Wikidata (unverified)
+  },
+  {
+    id: "kota-yoshihara",
+    name: "Kota Yoshihara",
+    category: "Modern Stars",
+    featuredClub: "Gamba Osaka",
+    fromClub: "Hokkaido Consadole Sapporo",
+    toClub: "RB Omiya Ardija",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Kota Yoshihara", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-08", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-08 from Wikidata (unverified)
+  },
+  {
+    id: "daijiro-takakuwa",
+    name: "Daijiro Takakuwa",
+    category: "Modern Stars",
+    featuredClub: "Kashima Antlers",
+    fromClub: "Yokohama F. Marinos",
+    toClub: "Tokyo Verdy",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Daijiro Takakuwa", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-08", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-08 from Wikidata (unverified)
+  },
+  {
+    id: "andre-onana",
+    name: "André Onana",
+    category: "Modern Stars",
+    featuredClub: "AFC Ajax",
+    fromClub: "Jong Ajax",
+    toClub: "Inter Milan",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "André Onana", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-08", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-08 from Wikidata (unverified)
+  },
+  {
+    id: "gareth-southgate",
+    name: "Gareth Southgate",
+    category: "Premier League Legends",
+    featuredClub: "Aston Villa F.C.",
+    fromClub: "Crystal Palace F.C.",
+    toClub: "Middlesbrough F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Gareth Southgate", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-08", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-08 from Wikidata (unverified)
+  },
+  {
+    id: "kevin-keegan",
+    name: "Kevin Keegan",
+    category: "Premier League Legends",
+    featuredClub: "Liverpool F.C.",
+    fromClub: "Scunthorpe United F.C.",
+    toClub: "Hamburger SV",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Kevin Keegan", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-08", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-08 from Wikidata (unverified)
+  },
+  {
+    id: "hideto-takahashi",
+    name: "Hideto Takahashi",
+    category: "Modern Stars",
+    featuredClub: "Sagan Tosu",
+    fromClub: "Vissel Kobe",
+    toClub: "Yokohama FC",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Hideto Takahashi", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-08", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-08 from Wikidata (unverified)
+  },
 ];
