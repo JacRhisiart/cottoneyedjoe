@@ -3442,4 +3442,144 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-07-08 from Wikidata (unverified)
   },
+  {
+    id: "ivica-olic",
+    name: "Ivica Olić",
+    category: "Premier League Legends",
+    featuredClub: "PFC CSKA Moscow",
+    fromClub: "GNK Dinamo Zagreb",
+    toClub: "Hamburger SV",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Ivica Olić", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-09", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-09 from Wikidata (unverified)
+  },
+  {
+    id: "ferran-torres",
+    name: "Ferran Torres",
+    category: "La Liga",
+    featuredClub: "Valencia CF",
+    fromClub: "Valencia CF Mestalla",
+    toClub: "Manchester City F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Ferran Torres", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-09", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-09 from Wikidata (unverified)
+  },
+  {
+    id: "darren-fletcher",
+    name: "Darren Fletcher",
+    category: "Modern Stars",
+    featuredClub: "West Bromwich Albion F.C.",
+    fromClub: "Manchester United F.C.",
+    toClub: "Stoke City F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Darren Fletcher", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-09", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-09 from Wikidata (unverified)
+  },
+  {
+    id: "kisho-yano",
+    name: "Kisho Yano",
+    category: "Modern Stars",
+    featuredClub: "Albirex Niigata",
+    fromClub: "Kashiwa Reysol",
+    toClub: "SC Freiburg",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Kisho Yano", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-09", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-09 from Wikidata (unverified)
+  },
+  {
+    id: "kazuya-yamamura",
+    name: "Kazuya Yamamura",
+    category: "Modern Stars",
+    featuredClub: "Cerezo Osaka",
+    fromClub: "Kashima Antlers",
+    toClub: "Kawasaki Frontale",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Kazuya Yamamura", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-09", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-09 from Wikidata (unverified)
+  },
+  {
+    id: "atsuhiro-miura",
+    name: "Atsuhiro Miura",
+    category: "Modern Stars",
+    featuredClub: "Tokyo Verdy",
+    fromClub: "Yokohama F. Marinos",
+    toClub: "Vissel Kobe",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Atsuhiro Miura", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-09", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-09 from Wikidata (unverified)
+  },
+  {
+    id: "ayase-ueda",
+    name: "Ayase Ueda",
+    category: "Modern Stars",
+    featuredClub: "Cercle Brugge K.S.V.",
+    fromClub: "Kashima Antlers",
+    toClub: "Feyenoord Rotterdam",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Ayase Ueda", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-09", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-09 from Wikidata (unverified)
+  },
+  {
+    id: "emre-belozoglu",
+    name: "Emre Belözoğlu",
+    category: "Modern Stars",
+    featuredClub: "Inter Milan",
+    fromClub: "Galatasaray S.K.",
+    toClub: "Newcastle United F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Emre Belözoğlu", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-09", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-09 from Wikidata (unverified)
+  },
+  {
+    id: "hisashi-kato",
+    name: "Hisashi Kato",
+    category: "Modern Stars",
+    featuredClub: "Shimizu S-Pulse",
+    fromClub: "Tokyo Verdy",
+    toClub: "Tokyo Verdy",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Hisashi Kato", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-09", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-09 from Wikidata (unverified)
+  },
+  {
+    id: "lucio",
+    name: "Lúcio",
+    category: "Modern Stars",
+    featuredClub: "FC Bayern Munich",
+    fromClub: "Bayer 04 Leverkusen",
+    toClub: "Inter Milan",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Lúcio", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-09", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-09 from Wikidata (unverified)
+  },
 ];
