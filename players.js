@@ -3582,4 +3582,144 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-07-09 from Wikidata (unverified)
   },
+  {
+    id: "gilberto-silva",
+    name: "Gilberto Silva",
+    category: "Premier League Legends",
+    featuredClub: "Arsenal F.C.",
+    fromClub: "Clube Atlético Mineiro",
+    toClub: "Panathinaikos F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Gilberto Silva", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-10", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-10 from Wikidata (unverified)
+  },
+  {
+    id: "jose-callejon",
+    name: "José Callejón",
+    category: "Modern Stars",
+    featuredClub: "SSC Napoli",
+    fromClub: "Real Madrid Club de Fútbol",
+    toClub: "ACF Fiorentina",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "José Callejón", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-10", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-10 from Wikidata (unverified)
+  },
+  {
+    id: "federico-valverde",
+    name: "Federico Valverde",
+    category: "Modern Stars",
+    featuredClub: "Real Madrid Castilla",
+    fromClub: "Club Atlético Peñarol",
+    toClub: "Deportivo de A Coruña",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Federico Valverde", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-10", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-10 from Wikidata (unverified)
+  },
+  {
+    id: "eden-hazard",
+    name: "Eden Hazard",
+    category: "Premier League Legends",
+    featuredClub: "Chelsea F.C.",
+    fromClub: "Lille OSC",
+    toClub: "Real Madrid Club de Fútbol",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Eden Hazard", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-10", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-10 from Wikidata (unverified)
+  },
+  {
+    id: "gerardo-martino",
+    name: "Gerardo Martino",
+    category: "La Liga",
+    featuredClub: "Newell's Old Boys",
+    fromClub: "C.D. Tenerife",
+    toClub: "Club Atlético Lanús",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Gerardo Martino", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-10", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-10 from Wikidata (unverified)
+  },
+  {
+    id: "cesar-sampaio",
+    name: "César Sampaio",
+    category: "Modern Stars",
+    featuredClub: "Sociedade Esportiva Palmeiras",
+    fromClub: "Santos F.C.",
+    toClub: "Yokohama Flügels",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "César Sampaio", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-10", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-10 from Wikidata (unverified)
+  },
+  {
+    id: "eiji-kawashima",
+    name: "Eiji Kawashima",
+    category: "Modern Stars",
+    featuredClub: "Kawasaki Frontale",
+    fromClub: "Nagoya Grampus",
+    toClub: "Lierse S.K.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Eiji Kawashima", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-10", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-10 from Wikidata (unverified)
+  },
+  {
+    id: "gervinho",
+    name: "Gervinho",
+    category: "Modern Stars",
+    featuredClub: "AS Roma",
+    fromClub: "Arsenal F.C.",
+    toClub: "Hebei F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Gervinho", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-10", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-10 from Wikidata (unverified)
+  },
+  {
+    id: "breel-embolo",
+    name: "Breel Embolo",
+    category: "Modern Stars",
+    featuredClub: "Schalke 04",
+    fromClub: "FC Basel",
+    toClub: "Borussia Mönchengladbach",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Breel Embolo", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-10", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-10 from Wikidata (unverified)
+  },
+  {
+    id: "dante",
+    name: "Dante",
+    category: "Modern Stars",
+    featuredClub: "FC Bayern Munich",
+    fromClub: "Borussia Mönchengladbach",
+    toClub: "VfL Wolfsburg",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Dante", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-10", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-10 from Wikidata (unverified)
+  },
 ];
