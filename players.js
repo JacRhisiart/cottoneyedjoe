@@ -3722,4 +3722,144 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-07-10 from Wikidata (unverified)
   },
+  {
+    id: "adrian-mutu",
+    name: "Adrian Mutu",
+    category: "Modern Stars",
+    featuredClub: "ACF Fiorentina",
+    fromClub: "Juventus FC",
+    toClub: "AC Cesena",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Adrian Mutu", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-11", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-11 from Wikidata (unverified)
+  },
+  {
+    id: "gotoku-sakai",
+    name: "Gōtoku Sakai",
+    category: "Modern Stars",
+    featuredClub: "Hamburger SV",
+    fromClub: "VfB Stuttgart",
+    toClub: "Vissel Kobe",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Gōtoku Sakai", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-11", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-11 from Wikidata (unverified)
+  },
+  {
+    id: "jerzy-dudek",
+    name: "Jerzy Dudek",
+    category: "Premier League Legends",
+    featuredClub: "Liverpool F.C.",
+    fromClub: "Feyenoord Rotterdam",
+    toClub: "Real Madrid Club de Fútbol",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Jerzy Dudek", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-11", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-11 from Wikidata (unverified)
+  },
+  {
+    id: "luis-diaz",
+    name: "Luis Díaz",
+    category: "Premier League Legends",
+    featuredClub: "Liverpool F.C.",
+    fromClub: "FC Porto",
+    toClub: "FC Bayern Munich",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Luis Díaz", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-11", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-11 from Wikidata (unverified)
+  },
+  {
+    id: "erik-lamela",
+    name: "Erik Lamela",
+    category: "Premier League Legends",
+    featuredClub: "Tottenham Hotspur F.C.",
+    fromClub: "AS Roma",
+    toClub: "Sevilla FC",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Erik Lamela", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-11", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-11 from Wikidata (unverified)
+  },
+  {
+    id: "alex-iwobi",
+    name: "Alex Iwobi",
+    category: "Premier League Legends",
+    featuredClub: "Everton F.C.",
+    fromClub: "Arsenal F.C.",
+    toClub: "Fulham F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Alex Iwobi", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-11", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-11 from Wikidata (unverified)
+  },
+  {
+    id: "kenichi-uemura",
+    name: "Kenichi Uemura",
+    category: "Modern Stars",
+    featuredClub: "Tokyo Verdy",
+    fromClub: "Cerezo Osaka",
+    toClub: "YSCC Yokohama",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Kenichi Uemura", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-11", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-11 from Wikidata (unverified)
+  },
+  {
+    id: "bobby-robson",
+    name: "Bobby Robson",
+    category: "Modern Stars",
+    featuredClub: "West Bromwich Albion F.C.",
+    fromClub: "Fulham F.C.",
+    toClub: "Fulham F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Bobby Robson", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-11", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-11 from Wikidata (unverified)
+  },
+  {
+    id: "kensuke-nagai",
+    name: "Kensuke Nagai",
+    category: "Modern Stars",
+    featuredClub: "FC Tokyo",
+    fromClub: "Nagoya Grampus",
+    toClub: "Nagoya Grampus",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Kensuke Nagai", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-11", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-11 from Wikidata (unverified)
+  },
+  {
+    id: "louis-van-gaal",
+    name: "Louis van Gaal",
+    category: "Modern Stars",
+    featuredClub: "Sparta Rotterdam",
+    fromClub: "SC Telstar",
+    toClub: "AZ Alkmaar",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Louis van Gaal", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-11", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-11 from Wikidata (unverified)
+  },
 ];
