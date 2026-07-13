@@ -4002,4 +4002,144 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-07-12 from Wikidata (unverified)
   },
+  {
+    id: "david-moyes",
+    name: "David Moyes",
+    category: "Modern Stars",
+    featuredClub: "Shrewsbury Town F.C.",
+    fromClub: "Bristol City F.C.",
+    toClub: "Dunfermline Athletic F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "David Moyes", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-13", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-13 from Wikidata (unverified)
+  },
+  {
+    id: "joan-capdevila",
+    name: "Joan Capdevila",
+    category: "La Liga",
+    featuredClub: "Deportivo de A Coruña",
+    fromClub: "Atlético Madrid",
+    toClub: "Villarreal CF",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Joan Capdevila", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-13", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-13 from Wikidata (unverified)
+  },
+  {
+    id: "kosuke-ota",
+    name: "Kosuke Ota",
+    category: "Modern Stars",
+    featuredClub: "FC Tokyo",
+    fromClub: "Shimizu S-Pulse",
+    toClub: "SBV Vitesse",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Kosuke Ota", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-13", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-13 from Wikidata (unverified)
+  },
+  {
+    id: "keiji-kaimoto",
+    name: "Keiji Kaimoto",
+    category: "Modern Stars",
+    featuredClub: "Nagoya Grampus",
+    fromClub: "Vissel Kobe",
+    toClub: "Albirex Niigata",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Keiji Kaimoto", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-13", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-13 from Wikidata (unverified)
+  },
+  {
+    id: "frenkie-de-jong",
+    name: "Frenkie de Jong",
+    category: "Modern Stars",
+    featuredClub: "AFC Ajax",
+    fromClub: "Jong Ajax",
+    toClub: "FC Barcelona",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Frenkie de Jong", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-13", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-13 from Wikidata (unverified)
+  },
+  {
+    id: "alan-dzagoev",
+    name: "Alan Dzagoev",
+    category: "Premier League Legends",
+    featuredClub: "PFC CSKA Moscow",
+    fromClub: "FC Krylia Sovetov Samara",
+    toClub: "Rubin Kazan",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Alan Dzagoev", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-13", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-13 from Wikidata (unverified)
+  },
+  {
+    id: "djalma-santos",
+    name: "Djalma Santos",
+    category: "Modern Stars",
+    featuredClub: "Sociedade Esportiva Palmeiras",
+    fromClub: "Associação Portuguesa de Desportos",
+    toClub: "Club Athletico Paranaense",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Djalma Santos", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-13", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-13 from Wikidata (unverified)
+  },
+  {
+    id: "dirk-kuyt",
+    name: "Dirk Kuyt",
+    category: "Premier League Legends",
+    featuredClub: "Liverpool F.C.",
+    fromClub: "Feyenoord Rotterdam",
+    toClub: "Fenerbahçe Istanbul",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Dirk Kuyt", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-13", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-13 from Wikidata (unverified)
+  },
+  {
+    id: "edwin-van-der-sar",
+    name: "Edwin van der Sar",
+    category: "Premier League Legends",
+    featuredClub: "Manchester United F.C.",
+    fromClub: "Fulham F.C.",
+    toClub: "VV Noordwijk",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Edwin van der Sar", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-13", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-13 from Wikidata (unverified)
+  },
+  {
+    id: "john-stones",
+    name: "John Stones",
+    category: "Premier League Legends",
+    featuredClub: "Everton F.C.",
+    fromClub: "Barnsley F.C.",
+    toClub: "Manchester City F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "John Stones", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-13", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-13 from Wikidata (unverified)
+  },
 ];
