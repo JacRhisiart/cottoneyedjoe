@@ -4142,4 +4142,144 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-07-13 from Wikidata (unverified)
   },
+  {
+    id: "javier-aguirre",
+    name: "Javier Aguirre",
+    category: "Modern Stars",
+    featuredClub: "Club América",
+    fromClub: "Tigres UANL",
+    toClub: "Atlante F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Javier Aguirre", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-15", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-15 from Wikidata (unverified)
+  },
+  {
+    id: "gerald-vanenburg",
+    name: "Gerald Vanenburg",
+    category: "Modern Stars",
+    featuredClub: "PSV Eindhoven",
+    fromClub: "AFC Ajax",
+    toClub: "Júbilo Iwata",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Gerald Vanenburg", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-15", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-15 from Wikidata (unverified)
+  },
+  {
+    id: "daiki-niwa",
+    name: "Daiki Niwa",
+    category: "Modern Stars",
+    featuredClub: "Tokushima Vortis",
+    fromClub: "Gamba Osaka",
+    toClub: "RB Omiya Ardija",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Daiki Niwa", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-15", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-15 from Wikidata (unverified)
+  },
+  {
+    id: "maicon",
+    name: "Maicon",
+    category: "Modern Stars",
+    featuredClub: "Inter Milan",
+    fromClub: "AS Monaco FC",
+    toClub: "Manchester City F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Maicon", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-15", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-15 from Wikidata (unverified)
+  },
+  {
+    id: "fernando-santos",
+    name: "Fernando Santos",
+    category: "Modern Stars",
+    featuredClub: "G.D. Estoril Praia",
+    fromClub: "S.L. Benfica",
+    toClub: "C.S. Marítimo",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Fernando Santos", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-15", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-15 from Wikidata (unverified)
+  },
+  {
+    id: "daniel-alves",
+    name: "Daniel Alves",
+    category: "La Liga",
+    featuredClub: "FC Barcelona",
+    fromClub: "Sevilla FC",
+    toClub: "Juventus FC",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Daniel Alves", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-15", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-15 from Wikidata (unverified)
+  },
+  {
+    id: "dimitri-payet",
+    name: "Dimitri Payet",
+    category: "Modern Stars",
+    featuredClub: "Olympique de Marseille",
+    fromClub: "West Ham United F.C.",
+    toClub: "CR Vasco da Gama",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Dimitri Payet", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-15", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-15 from Wikidata (unverified)
+  },
+  {
+    id: "keisuke-honda",
+    name: "Keisuke Honda",
+    category: "Premier League Legends",
+    featuredClub: "PFC CSKA Moscow",
+    fromClub: "VVV-Venlo",
+    toClub: "AC Milan",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Keisuke Honda", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-15", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-15 from Wikidata (unverified)
+  },
+  {
+    id: "diego-godin",
+    name: "Diego Godín",
+    category: "La Liga",
+    featuredClub: "Atlético Madrid",
+    fromClub: "Villarreal CF",
+    toClub: "Inter Milan",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Diego Godín", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-15", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-15 from Wikidata (unverified)
+  },
+  {
+    id: "fred",
+    name: "Fred",
+    category: "Modern Stars",
+    featuredClub: "Fluminense F.C.",
+    fromClub: "Olympique Lyonnais",
+    toClub: "Clube Atlético Mineiro",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Fred", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-15", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-15 from Wikidata (unverified)
+  },
 ];
