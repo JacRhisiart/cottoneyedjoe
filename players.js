@@ -4282,4 +4282,144 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-07-15 from Wikidata (unverified)
   },
+  {
+    id: "fernando-hierro",
+    name: "Fernando Hierro",
+    category: "La Liga",
+    featuredClub: "Real Madrid Club de Fútbol",
+    fromClub: "Real Valladolid",
+    toClub: "Al-Rayyan",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Fernando Hierro", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-16", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-16 from Wikidata (unverified)
+  },
+  {
+    id: "andreas-brehme",
+    name: "Andreas Brehme",
+    category: "Modern Stars",
+    featuredClub: "1. FC Kaiserslautern",
+    fromClub: "1. FC Saarbrücken",
+    toClub: "FC Bayern Munich",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Andreas Brehme", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-16", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-16 from Wikidata (unverified)
+  },
+  {
+    id: "claudio-ranieri",
+    name: "Claudio Ranieri",
+    category: "Modern Stars",
+    featuredClub: "Unione Sportiva Catanzaro",
+    fromClub: "AS Roma",
+    toClub: "Catania FC",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Claudio Ranieri", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-16", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-16 from Wikidata (unverified)
+  },
+  {
+    id: "grzegorz-lato",
+    name: "Grzegorz Lato",
+    category: "Modern Stars",
+    featuredClub: "K.S.C. Lokeren Oost-Vlaanderen",
+    fromClub: "Stal Mielec",
+    toClub: "Atlante F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Grzegorz Lato", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-16", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-16 from Wikidata (unverified)
+  },
+  {
+    id: "idrissa-gueye",
+    name: "Idrissa Gueye",
+    category: "Modern Stars",
+    featuredClub: "Lille OSC",
+    fromClub: "Diambars FC",
+    toClub: "Aston Villa F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Idrissa Gueye", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-16", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-16 from Wikidata (unverified)
+  },
+  {
+    id: "lucas-hernandez",
+    name: "Lucas Hernandez",
+    category: "Modern Stars",
+    featuredClub: "FC Bayern Munich",
+    fromClub: "Atlético Madrid",
+    toClub: "Paris Saint-Germain FC",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Lucas Hernandez", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-16", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-16 from Wikidata (unverified)
+  },
+  {
+    id: "hiroshige-yanagimoto",
+    name: "Hiroshige Yanagimoto",
+    category: "Modern Stars",
+    featuredClub: "Gamba Osaka",
+    fromClub: "Sanfrecce Hiroshima",
+    toClub: "Cerezo Osaka",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Hiroshige Yanagimoto", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-16", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-16 from Wikidata (unverified)
+  },
+  {
+    id: "danilo",
+    name: "Danilo",
+    category: "Modern Stars",
+    featuredClub: "Juventus FC",
+    fromClub: "Manchester City F.C.",
+    toClub: "Clube de Regatas do Flamengo",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Danilo", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-16", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-16 from Wikidata (unverified)
+  },
+  {
+    id: "joachim-low",
+    name: "Joachim Löw",
+    category: "Modern Stars",
+    featuredClub: "SC Freiburg",
+    fromClub: "Karlsruher SC",
+    toClub: "FC Schaffhausen",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Joachim Löw", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-16", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-16 from Wikidata (unverified)
+  },
+  {
+    id: "john-arne-riise",
+    name: "John Arne Riise",
+    category: "Premier League Legends",
+    featuredClub: "Liverpool F.C.",
+    fromClub: "AS Monaco FC",
+    toClub: "AS Roma",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "John Arne Riise", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-16", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-16 from Wikidata (unverified)
+  },
 ];
