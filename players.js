@@ -4422,4 +4422,18 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-07-16 from Wikidata (unverified)
   },
+  {
+    id: "javier-hernandez",
+    name: "Javier Hernández",
+    category: "Premier League Legends",
+    featuredClub: "Manchester United F.C.",
+    fromClub: "C.D. Guadalajara",
+    toClub: "Real Madrid Club de Fútbol",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Javier Hernández", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-17", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-17 from Wikidata (unverified)
+  },
 ];
