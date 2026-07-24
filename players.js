@@ -4436,4 +4436,18 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-07-17 from Wikidata (unverified)
   },
+  {
+    id: "jari-litmanen",
+    name: "Jari Litmanen",
+    category: "Modern Stars",
+    featuredClub: "AFC Ajax",
+    fromClub: "MYPA",
+    toClub: "FC Barcelona",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Jari Litmanen", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-24", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-24 from Wikidata (unverified)
+  },
 ];
