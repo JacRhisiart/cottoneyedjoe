@@ -4450,4 +4450,18 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-07-24 from Wikidata (unverified)
   },
+  {
+    id: "jerome-boateng",
+    name: "Jérôme Boateng",
+    category: "Modern Stars",
+    featuredClub: "FC Bayern Munich",
+    fromClub: "Manchester City F.C.",
+    toClub: "Olympique Lyonnais",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Jérôme Boateng", // photo resolved at runtime from Wikipedia
+    daily: "2026-07-30", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-07-30 from Wikidata (unverified)
+  },
 ];
