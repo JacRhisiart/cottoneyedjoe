@@ -4464,4 +4464,18 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-07-30 from Wikidata (unverified)
   },
+  {
+    id: "jude-belligoal",
+    name: "Jude Belligoal",
+    category: "Modern Stars",
+    featuredClub: "Borussia Dortmund",
+    fromClub: "Birmingham City F.C.",
+    toClub: "Real Madrid Club de Fútbol",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Jude Belligoal", // photo resolved at runtime from Wikipedia
+    daily: "2026-08-02", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-08-02 from Wikidata (unverified)
+  },
 ];
