@@ -4478,4 +4478,46 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-08-02 from Wikidata (unverified)
   },
+  {
+    id: "denzel-dumfries",
+    name: "Denzel Dumfries",
+    category: "Modern Stars",
+    featuredClub: "Inter Milan",
+    fromClub: "PSV Eindhoven",
+    toClub: "Real Madrid Club de Fútbol",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Denzel Dumfries", // photo resolved at runtime from Wikipedia
+    daily: "2026-08-09", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-08-09 from Wikidata (unverified)
+  },
+  {
+    id: "emmanuel-petit",
+    name: "Emmanuel Petit",
+    category: "Premier League Legends",
+    featuredClub: "Arsenal F.C.",
+    fromClub: "AS Monaco FC",
+    toClub: "FC Barcelona",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Emmanuel Petit", // photo resolved at runtime from Wikipedia
+    daily: "2026-08-09", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-08-09 from Wikidata (unverified)
+  },
+  {
+    id: "andrcu-onana",
+    name: "Andrcu Onana",
+    category: "Modern Stars",
+    featuredClub: "AFC Ajax",
+    fromClub: "Jong Ajax",
+    toClub: "Inter Milan",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Andrcu Onana", // photo resolved at runtime from Wikipedia
+    daily: "2026-08-09", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-08-09 from Wikidata (unverified)
+  },
 ];
