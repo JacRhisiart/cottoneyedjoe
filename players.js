@@ -4520,4 +4520,18 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-08-09 from Wikidata (unverified)
   },
+  {
+    id: "jurgen-kohler",
+    name: "Jürgen Kohler",
+    category: "Modern Stars",
+    featuredClub: "Juventus FC",
+    fromClub: "FC Bayern Munich",
+    toClub: "Borussia Dortmund",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Jürgen Kohler", // photo resolved at runtime from Wikipedia
+    daily: "2026-08-12", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-08-12 from Wikidata (unverified)
+  },
 ];
