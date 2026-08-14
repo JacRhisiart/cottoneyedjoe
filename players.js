@@ -4534,4 +4534,18 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-08-12 from Wikidata (unverified)
   },
+  {
+    id: "gen-shoji",
+    name: "Gen Shōji",
+    category: "Modern Stars",
+    featuredClub: "Gamba Osaka",
+    fromClub: "Toulouse FC",
+    toClub: "Kashima Antlers",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Gen Shōji", // photo resolved at runtime from Wikipedia
+    daily: "2026-08-14", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-08-14 from Wikidata (unverified)
+  },
 ];
