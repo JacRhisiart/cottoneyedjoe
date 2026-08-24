@@ -4548,4 +4548,32 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-08-14 from Wikidata (unverified)
   },
+  {
+    id: "claudio-caniggia",
+    name: "Claudio Caniggia",
+    category: "Modern Stars",
+    featuredClub: "Atalanta BC",
+    fromClub: "Hellas Verona FC",
+    toClub: "AS Roma",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Claudio Caniggia", // photo resolved at runtime from Wikipedia
+    daily: "2026-08-24", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-08-24 from Wikidata (unverified)
+  },
+  {
+    id: "ferland-mendy",
+    name: "Ferland Mendy",
+    category: "Modern Stars",
+    featuredClub: "Olympique Lyonnais",
+    fromClub: "Le Havre AC",
+    toClub: "Real Madrid Club de Fútbol",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Ferland Mendy", // photo resolved at runtime from Wikipedia
+    daily: "2026-08-24", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-08-24 from Wikidata (unverified)
+  },
 ];
