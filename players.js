@@ -4576,4 +4576,18 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-08-24 from Wikidata (unverified)
   },
+  {
+    id: "juan-mata-pata",
+    name: "Juan Mata Pata",
+    category: "Premier League Legends",
+    featuredClub: "Manchester United F.C.",
+    fromClub: "Chelsea F.C.",
+    toClub: "Galatasaray S.K.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Juan Mata Pata", // photo resolved at runtime from Wikipedia
+    daily: "2026-08-27", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-08-27 from Wikidata (unverified)
+  },
 ];
