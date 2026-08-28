@@ -4590,4 +4590,18 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-08-27 from Wikidata (unverified)
   },
+  {
+    id: "felix-magath",
+    name: "Felix Magath",
+    category: "Modern Stars",
+    featuredClub: "1. FC Saarbrücken",
+    fromClub: "Viktoria Aschaffenburg",
+    toClub: "Hamburger SV",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Felix Magath", // photo resolved at runtime from Wikipedia
+    daily: "2026-08-28", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-08-28 from Wikidata (unverified)
+  },
 ];
