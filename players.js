@@ -4604,4 +4604,18 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-08-28 from Wikidata (unverified)
   },
+  {
+    id: "eduardo-camavinga",
+    name: "Eduardo Camavinga",
+    category: "Modern Stars",
+    featuredClub: "Stade Rennais F.C.",
+    fromClub: "Stade Rennais FC B",
+    toClub: "Real Madrid Club de Fútbol",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Eduardo Camavinga", // photo resolved at runtime from Wikipedia
+    daily: "2026-08-31", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-08-31 from Wikidata (unverified)
+  },
 ];
