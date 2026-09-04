@@ -4618,4 +4618,32 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-08-31 from Wikidata (unverified)
   },
+  {
+    id: "bradley-barcola",
+    name: "Bradley Barcola",
+    category: "Modern Stars",
+    featuredClub: "Paris Saint-Germain FC",
+    fromClub: "Olympique Lyonnais",
+    toClub: "Liverpool F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Bradley Barcola", // photo resolved at runtime from Wikipedia
+    daily: "2026-09-04", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-09-04 from Wikidata (unverified)
+  },
+  {
+    id: "jose-maria-gimenez",
+    name: "José María Giménez",
+    category: "La Liga",
+    featuredClub: "Atlético Madrid",
+    fromClub: "Danubio F.C.",
+    toClub: "Deportivo de A Coruña",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "José María Giménez", // photo resolved at runtime from Wikipedia
+    daily: "2026-09-04", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-09-04 from Wikidata (unverified)
+  },
 ];
