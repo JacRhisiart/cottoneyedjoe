@@ -4646,4 +4646,18 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-09-04 from Wikidata (unverified)
   },
+  {
+    id: "gabriel-martinelli",
+    name: "Gabriel Martinelli",
+    category: "Premier League Legends",
+    featuredClub: "Arsenal F.C.",
+    fromClub: "Ituano Futebol Clube",
+    toClub: "Al Hilal SFC",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Gabriel Martinelli", // photo resolved at runtime from Wikipedia
+    daily: "2026-09-05", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-09-05 from Wikidata (unverified)
+  },
 ];
