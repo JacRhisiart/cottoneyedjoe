@@ -4660,4 +4660,32 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-09-05 from Wikidata (unverified)
   },
+  {
+    id: "aymeric-laporte",
+    name: "Aymeric Laporte",
+    category: "La Liga",
+    featuredClub: "Athletic Club",
+    fromClub: "Athletic Bilbao B",
+    toClub: "Manchester City F.C.",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Aymeric Laporte", // photo resolved at runtime from Wikipedia
+    daily: "2026-10-01", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-10-01 from Wikidata (unverified)
+  },
+  {
+    id: "julian-nagelsmann",
+    name: "Julian Nagelsmann",
+    category: "Modern Stars",
+    featuredClub: "FC Augsburg",
+    fromClub: "FC Issing",
+    toClub: "FC Issing",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Julian Nagelsmann", // photo resolved at runtime from Wikipedia
+    daily: "2026-10-01", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-10-01 from Wikidata (unverified)
+  },
 ];
