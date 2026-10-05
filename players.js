@@ -4688,4 +4688,18 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-10-01 from Wikidata (unverified)
   },
+  {
+    id: "ederson",
+    name: "Ederson",
+    category: "Premier League Legends",
+    featuredClub: "Manchester City F.C.",
+    fromClub: "S.L. Benfica",
+    toClub: "Fenerbahçe Istanbul",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Ederson", // photo resolved at runtime from Wikipedia
+    daily: "2026-10-05", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-10-05 from Wikidata (unverified)
+  },
 ];
