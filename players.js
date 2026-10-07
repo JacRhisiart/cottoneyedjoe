@@ -4702,4 +4702,18 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-10-05 from Wikidata (unverified)
   },
+  {
+    id: "dunga",
+    name: "Dunga",
+    category: "Modern Stars",
+    featuredClub: "ACF Fiorentina",
+    fromClub: "Pisa SC",
+    toClub: "Delfino Pescara 1936",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Dunga", // photo resolved at runtime from Wikipedia
+    daily: "2026-10-07", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-10-07 from Wikidata (unverified)
+  },
 ];
