@@ -4716,4 +4716,18 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-10-07 from Wikidata (unverified)
   },
+  {
+    id: "gaku-shibasaki",
+    name: "Gaku Shibasaki",
+    category: "Modern Stars",
+    featuredClub: "CD Leganés",
+    fromClub: "Deportivo de A Coruña",
+    toClub: "Kashima Antlers",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Gaku Shibasaki", // photo resolved at runtime from Wikipedia
+    daily: "2026-10-13", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-10-13 from Wikidata (unverified)
+  },
 ];
