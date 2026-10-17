@@ -4730,4 +4730,18 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-10-13 from Wikidata (unverified)
   },
+  {
+    id: "alpay-ozalan",
+    name: "Alpay Özalan",
+    category: "Modern Stars",
+    featuredClub: "Beşiktaş J.K.",
+    fromClub: "Altay S.K.",
+    toClub: "Fenerbahçe Istanbul",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "Alpay Özalan", // photo resolved at runtime from Wikipedia
+    daily: "2026-10-17", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-10-17 from Wikidata (unverified)
+  },
 ];
