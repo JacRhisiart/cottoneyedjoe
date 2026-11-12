@@ -4744,4 +4744,18 @@ const PLAYERS = [
     altSpellings: { fromClub: [], toClub: [] },
     // auto-added 2026-10-17 from Wikidata (unverified)
   },
+  {
+    id: "joao-moutinho",
+    name: "João Moutinho",
+    category: "Modern Stars",
+    featuredClub: "Sporting CP",
+    fromClub: "Sporting CP B",
+    toClub: "FC Porto",
+    photoUrl: null,
+    photoNeutral: false,
+    wiki: "João Moutinho", // photo resolved at runtime from Wikipedia
+    daily: "2026-11-12", // featured as the daily challenge on this date
+    altSpellings: { fromClub: [], toClub: [] },
+    // auto-added 2026-11-12 from Wikidata (unverified)
+  },
 ];
